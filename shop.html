@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>甜心蛋糕坊｜Sweet Heart Bakery</title>
+    <link rel="icon" href="images/logo-icon.png" type="image/x-icon">
+
+    <!-- Google Font(下面這兩句意思是:等等要去 Google Fonts 拿東西，先幫我建立連線吧～) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font思源宋體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Google Font Playfair Display SC -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Font Cormorant Garamond -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+
+    <link href="CSS/tokens.css" rel="stylesheet">
+    <link href="CSS/base.css" rel="stylesheet">
+    <link href="CSS/typography.css" rel="stylesheet">
+    <link href="CSS/layout.css" rel="stylesheet">
+    <link href="CSS/components.css" rel="stylesheet">
+    <link href="CSS/utilities.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+
+    <!-- Font Awesome icon -->
+    <script src="https://kit.fontawesome.com/b0d15683e9.js" crossorigin="anonymous"></script>
+
+    <script src="js/main.js" defer></script>
+
+    <!-- Scroll Reveal 滾動顯示動畫 -->
+    <script src="js/scroll-reveal.js" defer></script>
+
+    <!-- 有這句在電腦上預覽手機版網頁才能正常顯示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__inner">
+
+                <a href="index.html" class="site-logo">
+                    <img src="images/logo.png" alt="甜心蛋糕坊">
+                </a>
+
+                <!-- 手機版選單切換按鈕 -->
+                <button class="site-nav-toggle" type="button" aria-label="開啟選單">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="site-nav" aria-label="主要導覽">
+                    <a href="index.html" class="site-nav__brand">
+                        <img src="images/logo-2.png" alt="甜心蛋糕坊">
+                    </a>
+                    <ul class="site-nav__list">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="timeline.html">大事記</a></li>
+                        <li><a href="products.html">商品一覽</a></li>
+                        <li><a href="shop.html" class="is-active">門市據點</a></li>
+                        <li><a href="news.html">最新消息</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
+                    </ul>
+
+                    <div class="site-nav__extra">
+                        <a href="products.html" class="btn btn-secondary site-nav__cta">
+                            立即訂購
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <div class="site-nav__social">
+                            <p class="site-nav__social-title">
+                                關注我們
+                            </p>
+                            <div class="site-nav__social-links">
+                                <a href="contact.html" aria-label="Facebook 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="contact.html" aria-label="Instagram 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="contact.html" aria-label="LINE 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="site-nav__hours">
+                            <p class="site-nav__hours-title">
+                                營業時間
+                            </p>
+                            <p class="site-nav__hours-time">
+                                Mon - Sun
+                            </p>
+                            <p class="site-nav__hours-time">
+                                10:00 - 21:00
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- shop-hero -->
+    <section class="page-hero section-lg">
+        <div class="container">
+            <div class="page-hero__content text-center">
+                <h1 class="page-hero__title">門市據點</h1>
+                <p class="page-hero__en font-playfair">OUR STORES</p>
+                <p class="page-hero__desc">
+                    歡迎蒞臨甜心蛋糕坊各門市<br>
+                    我們期待為您提供最優質的服務與最美味的甜點
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 門市據點區塊 -->
+    <section class="store section-lg">
+        <div class="container">
+            <div class="store-list">
+                <article class="store-card split">
+                    <!-- 左側地圖 -->
+                    <div class="store-card__map flex-1">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.002890365105!2d121.56196397537656!3d25.033975977816482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da9c9e1f%3A0x1206bcf082fd10a6!2zVGFpcGVpIDEwMSwgTm8uIDfkv6Hnvqnot6_kupTmrrXopb_mnZHph4zkv6HnvqnljYDoh7rljJfluIIxMTA!5e0!3m2!1szh-TW!2stw!4v1782016983743!5m2!1szh-TW!2stw"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- 右側資訊 -->
+                    <div class="store-card__content flex-1">
+                        <h2 class="store-card__title">
+                            信義旗艦店
+                        </h2>
+                        <ul class="store-info">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h3>地址</h3>
+                                    <p>台北市信義區信義路五段7號1樓</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h3>電話</h3>
+                                    <p>(02) 2345-6789</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-clock"></i>
+                                <div>
+                                    <h3>營業時間</h3>
+                                    <p>週一至週日 10:00 - 22:00</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- 門市特色 -->
+                        <div class="store-features">
+                            <h3 class="store-features__title">
+                                門市特色
+                            </h3>
+                            <div class="row gap-3">
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    外帶服務
+                                </span>
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    內用座位
+                                </span>
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    客製化訂單
+                                </span>
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    停車場
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 按鈕 -->
+                        <div class="store-actions">
+                            <a href="tel:0223456789" class="btn btn-secondary">
+                                <i class="fa-solid fa-phone"></i>
+                                立即致電
+                            </a>
+                            <a href="https://maps.app.goo.gl/XsdJBTBn1Netg5S77" target="_blank" class="btn btn-primary">
+                                <i class="fa-solid fa-location-arrow"></i>
+                                導航前往
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="store-card split">
+                    <!-- 左側地圖 -->
+                    <div class="store-card__map flex-1">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.002890365105!2d121.56196397537656!3d25.033975977816482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da9c9e1f%3A0x1206bcf082fd10a6!2zVGFpcGVpIDEwMSwgTm8uIDfkv6Hnvqnot6_kupTmrrXopb_mnZHph4zkv6HnvqnljYDoh7rljJfluIIxMTA!5e0!3m2!1szh-TW!2stw!4v1782016983743!5m2!1szh-TW!2stw"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- 右側資訊 -->
+                    <div class="store-card__content flex-1">
+                        <h2 class="store-card__title">
+                            東區形象店
+                        </h2>
+                        <ul class="store-info">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h3>地址</h3>
+                                    <p>台北市大安區忠孝東路四段181巷35弄</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h3>電話</h3>
+                                    <p>(02) 2345-6790</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-clock"></i>
+                                <div>
+                                    <h3>營業時間</h3>
+                                    <p>週一至週日 11:00 - 21:00</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- 門市特色 -->
+                        <div class="store-features">
+                            <h3 class="store-features__title">
+                                門市特色
+                            </h3>
+                            <div class="row gap-3">
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    外帶服務
+                                </span>
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    內用座位
+                                </span>
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    客製化訂單
+                                </span>
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    WiFi
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 按鈕 -->
+                        <div class="store-actions">
+                            <a href="tel:0223456790" class="btn btn-secondary">
+                                <i class="fa-solid fa-phone"></i>
+                                立即致電
+                            </a>
+                            <a href="https://maps.app.goo.gl/XsdJBTBn1Netg5S77" target="_blank" class="btn btn-primary">
+                                <i class="fa-solid fa-location-arrow"></i>
+                                導航前往
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="store-card split">
+                    <!-- 左側地圖 -->
+                    <div class="store-card__map flex-1">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.002890365105!2d121.56196397537656!3d25.033975977816482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6da9c9e1f%3A0x1206bcf082fd10a6!2zVGFpcGVpIDEwMSwgTm8uIDfkv6Hnvqnot6_kupTmrrXopb_mnZHph4zkv6HnvqnljYDoh7rljJfluIIxMTA!5e0!3m2!1szh-TW!2stw!4v1782016983743!5m2!1szh-TW!2stw"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <!-- 右側資訊 -->
+                    <div class="store-card__content flex-1">
+                        <h2 class="store-card__title">
+                            天母概念店
+                        </h2>
+                        <ul class="store-info">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h3>地址</h3>
+                                    <p>台北市士林區天母西路8號</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h3>電話</h3>
+                                    <p>(02) 2345-6791</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-clock"></i>
+                                <div>
+                                    <h3>營業時間</h3>
+                                    <p>週一至週日 10:30 - 21:30</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- 門市特色 -->
+                        <div class="store-features">
+                            <h3 class="store-features__title">
+                                門市特色
+                            </h3>
+                            <div class="row gap-3">
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    外帶服務
+                                </span>
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    內用座位
+                                </span>
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    客製化訂單
+                                </span>
+                                <span class="tag tag--primary--soft tag--text-primary">
+                                    戶外座位
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 按鈕 -->
+                        <div class="store-actions">
+                            <a href="tel:0223456791" class="btn btn-secondary">
+                                <i class="fa-solid fa-phone"></i>
+                                立即致電
+                            </a>
+                            <a href="https://maps.app.goo.gl/XsdJBTBn1Netg5S77" target="_blank" class="btn btn-primary">
+                                <i class="fa-solid fa-location-arrow"></i>
+                                導航前往
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- 頁尾 -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="site-footer__grid">
+
+                <div class="site-footer__brand">
+                    <h2 class="site-footer__title">甜心蛋糕坊</h2>
+                    <p class="site-footer__desc">
+                        每一口都是幸福的滋味，用心製作每一份甜點，傳遞溫暖與愛。
+                    </p>
+
+                    <div class="site-footer__socials">
+                        <a href="contact.html" aria-label="Facebook 尚未開放，請先透過聯絡我們詢問"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="contact.html" aria-label="Instagram 尚未開放，請先透過聯絡我們詢問"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="contact.html" aria-label="LINE 尚未開放，請先透過聯絡我們詢問"><i class="fa-brands fa-line"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">快速連結</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="timeline.html">大事記</a></li>
+                        <li><a href="products.html">商品一覽</a></li>
+                        <li><a href="shop.html">門市據點</a></li>
+                        <li><a href="news.html">最新消息</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">聯絡我們</h3>
+                    <ul class="site-footer__contact">
+                        <li><i class="fa-solid fa-phone"></i><span>02-2345-6789</span></li>
+                        <li><i class="fa-regular fa-envelope"></i><span>hello@sweetheart.com</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i><span>台北市大安區忠孝東路四段123號</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">訂閱電子報</h3>
+                    <p class="site-footer__desc">獲取最新優惠資訊</p>
+
+                    <form class="site-footer__form">
+                        <input class="site-footer__input" type="email" placeholder="您的電子郵件">
+                        <button type="submit" aria-label="送出訂閱">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="site-footer__bottom">
+                © 2026 甜心蛋糕坊 All Rights Reserved ・ Powered by Sweetheart Team
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 電子報訂閱成功提示框 -->
+    <div class="newsletter-modal" id="newsletter-modal" aria-hidden="true">
+        <div class="newsletter-modal__overlay"></div>
+        <div class="newsletter-modal__content">
+            <button class="newsletter-modal__close" type="button" aria-label="關閉通知">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="newsletter-modal__icon">🍓</div>
+
+            <h2 class="newsletter-modal__title">感謝訂閱！</h2>
+            <p class="newsletter-modal__text">
+                新品上市與優惠資訊將第一時間通知您。
+            </p>
+            <button class="btn btn-primary newsletter-modal__btn" type="button">
+                確定
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

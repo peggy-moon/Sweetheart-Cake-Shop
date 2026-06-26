@@ -1,0 +1,612 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>甜心蛋糕坊｜Sweet Heart Bakery</title>
+  <link rel="icon" href="images/logo-icon.png" type="image/x-icon">
+
+  <!-- Google Font(下面這兩句意思是:等等要去 Google Fonts 拿東西，先幫我建立連線吧～) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Font思源宋體 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+  <!-- Google Font Playfair Display SC -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Google Font Cormorant Garamond -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+
+
+  <link href="CSS/tokens.css" rel="stylesheet">
+  <link href="CSS/base.css" rel="stylesheet">
+  <link href="CSS/typography.css" rel="stylesheet">
+  <link href="CSS/layout.css" rel="stylesheet">
+  <link href="CSS/components.css" rel="stylesheet">
+  <link href="CSS/utilities.css" rel="stylesheet">
+  <link href="CSS/style.css" rel="stylesheet">
+
+  <!-- Font Awesome icon -->
+  <script src="https://kit.fontawesome.com/b0d15683e9.js" crossorigin="anonymous"></script>
+  
+  <script src="js/main.js" defer></script>
+
+  <!-- 商品資料 -->
+  <script src="js/products.js" defer></script>
+
+  <!-- 商品資訊彈出框 -->
+  <script src="js/modal.js" defer></script>
+
+    <!-- 顧客評價 -->
+  <script src="js/testimonials.js" defer></script>
+
+  <!-- Scroll Reveal 滾動顯示動畫 -->
+  <script src="js/scroll-reveal.js" defer></script>
+
+  <!-- 統計數字計數器 -->
+  <script src="js/stats-counter.js" defer></script>
+
+  <!-- 有這句在電腦上預覽手機版網頁才能正常顯示 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+
+        <a href="index.html" class="site-logo">
+          <img src="images/logo.png" alt="甜心蛋糕坊">
+        </a>
+
+        <!-- 手機版選單切換按鈕 -->
+        <button class="site-nav-toggle" type="button" aria-label="開啟選單">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="主要導覽">
+          <a href="index.html" class="site-nav__brand">
+            <img src="images/logo-2.png" alt="甜心蛋糕坊">
+          </a>
+          <ul class="site-nav__list">
+            <li><a href="index.html" class="is-active">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="timeline.html">大事記</a></li>
+            <li><a href="products.html">商品一覽</a></li>
+            <li><a href="shop.html">門市據點</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+            <li><a href="faq.html">常見問題</a></li>
+          </ul>
+
+          <div class="site-nav__extra">
+            <a href="products.html" class="btn btn-secondary site-nav__cta">
+              立即訂購
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <div class="site-nav__social">
+              <p class="site-nav__social-title">
+                關注我們
+              </p>
+              <div class="site-nav__social-links">
+                <a href="contact.html" aria-label="Facebook 尚未開放，請先透過聯絡我們詢問">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="contact.html" aria-label="Instagram 尚未開放，請先透過聯絡我們詢問">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="contact.html" aria-label="LINE 尚未開放，請先透過聯絡我們詢問">
+                  <i class="fa-brands fa-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="site-nav__hours">
+              <p class="site-nav__hours-title">
+                營業時間
+              </p>
+              <p class="site-nav__hours-time">
+                Mon - Sun
+              </p>
+              <p class="site-nav__hours-time">
+                10:00 - 21:00
+              </p>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section>
+      <div class="cover-section hero ls-wide ">
+        <div class="hero-text">
+          <h1 class="hero-title">手做甜點</h1>
+          <h2 class="hero-subtitle">每一口都是幸福</h2>
+          <p class="font-playfair hero-brand ls-widest">SWEET HEART BAKERY</p>
+          <p class="hero-desc">精選當季新鮮水果 | 每日限量手工製作</p>
+          <div class="hero-actions">
+            <a href="#featured-products--strawberry" class="btn btn-primary rounded-pill glass">
+              <i class="fa-solid fa-cake-candles"></i>探索甜點世界
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 招牌草莓千層蛋糕 -->
+    <section id="featured-products--strawberry" class="featured-product--strawberry section-lg reveal">
+      <div class="container">
+        <div class="split featured-product__layout">
+
+          <div class="featured-product__image flex-1">
+            <div class="product-circle product-circle--strawberry"></div>
+            <img src="images/Strawberry-Crepe-Cake-Slices.png" alt="招牌草莓千層蛋糕">
+          </div>
+
+          <div class="featured-product__content flex-2">
+
+            <div class="row gap-3">
+              <span class="tag tag--primary--soft tag--text-primary">人氣&nbsp;No.1</span>
+              <span class="tag tag--secondary--soft tag--text-secondary">季節限定</span>
+            </div>
+
+            <div class="featured-product__text">
+              <h3 class="heading text-4xl mb-4">招牌草莓千層蛋糕</h3>
+              <p class="text-lg fw-medium text-brand-primary">層層堆疊的幸福滋味，每一口都是驚喜</p>
+              <p class="text-secondary lh-loose">嚴選日本進口麵粉，搭配北海道鮮奶油，由師傅手工製作超過20層薄如蟬翼的法式可麗餅皮。
+                每一層都夾入新鮮草莓與香濃卡士達醬，入口即化的綿密口感，讓您品嚐到最純粹的幸福滋味。</p>
+            </div>
+
+            <ul class="product-features grid grid-2">
+              <li><span class="feature-icon feature-icon--primary"><i class="fa-solid fa-seedling"></i></span>嚴選新鮮草莓
+              </li>
+              <li><span class="feature-icon feature-icon--secondary"><i
+                    class="fa-solid fa-hand-holding-heart"></i></span>職人手工製作</li>
+              <li><span class="feature-icon feature-icon--secondary"><i class="fa-solid fa-award"></i></span>北海道鮮奶油</li>
+              <li><span class="feature-icon feature-icon--primary"><i class="fa-solid fa-heart"></i></span>低糖健康配方</li>
+            </ul>
+
+            <div class="featured-product__purchase">
+              <div class="product-price">
+                <span class="product-price__original">
+                  NT$ 680
+                </span>
+
+                <div class="product-price__current">
+                  <span class="product-price__amount text-brand-primary">
+                    NT$ 580
+                  </span>
+
+                  <span class="product-price__size">
+                    / 6吋
+                  </span>
+                </div>
+              </div>
+
+              <a href="products.html" class="btn btn-primary btn-gradient btn-gradient--strawberry">
+                立即選購
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 黃金生吐司 -->
+    <section class="featured-product--toast section-lg reveal">
+      <div class="container">
+        <div class="split split-reverse featured-product__layout">
+
+          <div class="featured-product__image flex-1">
+            <div class="product-circle product-circle--toast"></div>
+            <img src="images/Golden-Toast.png" alt="黃金生吐司">
+          </div>
+
+          <div class="featured-product__content flex-2">
+
+            <div class="row gap-3">
+              <span class="tag tag--primary--soft tag--text-primary">經典招牌</span>
+              <span class="tag tag--secondary--soft tag--text-secondary">每日新鮮出爐</span>
+            </div>
+
+            <div class="featured-product__text">
+              <h3 class="heading text-4xl mb-4">黃金生吐司</h3>
+              <p class="text-lg fw-medium text-brand-secondary">外酥內軟的極致口感，早餐的完美選擇</p>
+              <p class="text-secondary lh-loose">採用日本湯種工法，經過長時間低溫發酵，讓麵糰充分熟成。選用法國進口奶油與北海道牛乳，
+                烘烤出金黃酥脆的外皮與綿密柔軟的內裡。無論是直接品嚐或搭配果醬，都能感受到麥香與奶香的完美融合。</p>
+            </div>
+
+            <ul class="product-features grid grid-2">
+              <li><span class="feature-icon feature-icon--primary"><i
+                    class="fa-solid fa-alarm-clock"></i></span>72小時低溫發酵
+              </li>
+              <li><span class="feature-icon feature-icon--secondary"><i class="fa-solid fa-sun"></i></span>每日限量供應</li>
+              <li><span class="feature-icon feature-icon--secondary"><i class="fa-solid fa-award"></i></span>法國進口奶油</li>
+              <li><span class="feature-icon feature-icon--primary"><i class="fa-solid fa-wheat-awn"></i></span>無添加防腐劑
+              </li>
+            </ul>
+
+            <div class="featured-product__purchase">
+              <div class="product-price">
+                <span class="product-price__original">
+                  NT$ 180
+                </span>
+
+                <div class="product-price__current">
+                  <span class="product-price__amount text-brand-secondary">
+                    NT$ 150
+                  </span>
+
+                  <span class="product-price__size">
+                    / 1條
+                  </span>
+                </div>
+              </div>
+
+              <a href="products.html" class="btn btn-primary btn-gradient btn-gradient--toast">
+                立即選購
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 本月精選 -->
+    <section class="monthly-featured section-lg reveal">
+      <div class="container">
+
+        <div class="monthly-featured__header">
+          <h2 class="heading section-title">本月精選</h2>
+          <p class="font-playfair monthly-featured__en">FEATURED</p>
+          <p class="monthly-featured__desc">主廚特別推薦的季節限定甜點</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="product-card product-card--pink" data-product="layer-cake-strawberry">
+            <span class="product-card__tag tag--white tag--text-primary">SIGNATURE</span>
+
+            <div class="product-card__image">
+              <img src="images/Strawberry-Crepe-Cake-Slices.png" alt="草莓千層蛋糕">
+            </div>
+
+            <div class="product-card__body">
+              <h3 class="product-card__title">草莓千層蛋糕</h3>
+              <p class="product-card__desc">法式千層酥皮 / 新鮮草莓夾層</p>
+
+              <div class="product-card__footer">
+                <span class="product-card__price">NT$ 680</span>
+                <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card product-card--cream" data-product="croissant-strawberry">
+            <span class="product-card__tag tag--secondary-solid tag--text-white">NEW</span>
+
+            <div class="product-card__image">
+              <img src="images/Strawberry-Croissant.jpg" alt="草莓可頌">
+            </div>
+
+            <div class="product-card__body">
+              <h3 class="product-card__title">草莓可頌</h3>
+              <p class="product-card__desc">奶油香氣 / 草莓果醬內餡</p>
+
+              <div class="product-card__footer">
+                <span class="product-card__price">NT$ 120</span>
+                <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-product="tower-seasonal-fruit">
+            <span class="product-card__tag tag--primary-solid tag--text-white">HOT</span>
+
+            <div class="product-card__image">
+              <img src="images/Seasonal-fruit-tower.jpg" alt="季節水果塔">
+            </div>
+
+            <div class="product-card__body">
+              <h3 class="product-card__title">季節水果塔</h3>
+              <p class="product-card__desc">酥脆塔皮 / 卡士達醬 / 新鮮水果</p>
+
+              <div class="product-card__footer">
+                <span class="product-card__price">NT$ 450</span>
+                <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 統計數字 -->
+    <section class="stats section-lg">
+      <div class="container">
+
+        <div class="stats__header text-center">
+          <h2 class="heading section-title">
+            甜心蛋糕坊的<span class="mobile-break">幸福紀錄</span>
+          </h2>
+
+          <p class="stats__desc text-secondary">
+            用心烘焙每一天，累積無數甜蜜回憶
+          </p>
+        </div>
+
+        <div class="grid grid-4 stats__grid">
+
+          <article class="stats-card">
+            <div class="stats-card__number stats-card__number--plus" data-target="5000">
+              0
+            </div>
+            <p class="stats-card__label">滿意顧客</p>
+          </article>
+
+          <article class="stats-card">
+            <div class="stats-card__number stats-card__number--plus" data-target="20">
+              0
+            </div>
+            <p class="stats-card__label">人氣甜點</p>
+          </article>
+
+          <article class="stats-card">
+            <div class="stats-card__number stats-card__number--year" data-target="10">
+              0
+            </div>
+            <p class="stats-card__label">烘焙經驗</p>
+          </article>
+
+          <article class="stats-card">
+            <div class="stats-card__number stats-card__number--percent" data-target="98">
+              0
+            </div>
+            <p class="stats-card__label">顧客回購率</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 顧客評價 -->
+    <section class="testimonials section-lg reveal">
+      <div class="container">
+
+        <div class="testimonials__header text-center">
+          <h2 class="heading section-title">顧客真心推薦</h2>
+          <p class="testimonials__desc text-secondary">聽聽他們的甜蜜故事</p>
+        </div>
+
+        <article class="testimonial-card">
+          <div class="testimonial-card__rating">
+            <span class="testimonial-card__star">
+              <i class="fa-solid fa-star"></i>
+            </span>
+            <span id="testimonial-rating">5</span>
+          </div>
+
+          <blockquote id="testimonial-text" class="testimonial-card__text">
+            每次經過都忍不住進來買，草莓千層真的是我吃過最好吃的！
+            酥皮層次分明，奶油不會太甜，草莓新鮮多汁。店員服務也很親切，
+            會推薦當日最新鮮的產品。已經成為我每週必買的甜點了！
+          </blockquote>
+
+          <div class="testimonial-card__footer between">
+            <div class="testimonial-customer">
+              <img id="testimonial-avatar" class="testimonial-customer__avatar" src="images/customer-01.jpg"
+                alt="顧客林小姐">
+
+              <div>
+                <h3 id="testimonial-name" class="testimonial-customer__name">林小姐</h3>
+                <p id="testimonial-meta" class="testimonial-customer__meta text-secondary">台北市｜常客</p>
+              </div>
+            </div>
+
+            <div class="testimonial-controls row gap-3">
+              <button id="testimonial-prev" class="testimonial-control" type="button" aria-label="上一則推薦">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+
+              <button id="testimonial-next" class="testimonial-control testimonial-control--next" type="button"
+                aria-label="下一則推薦">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 首頁 CTA 區塊 (Call To Action) 引導購買  (目前暫無購買選項) -->
+    <section class="cover-section cta-banner section-lg">
+      <div class="container">
+        <div class="cta-banner-text">
+          <h1 class="cta-banner-title">探索更多甜蜜滋味</h1>
+          <p class="cta-banner-subtitle">每日新鮮手工製作</p>
+          <p class="cta-banner-subtitle">精選人氣商品等您發現</p>
+          <div class="cta-banner-actions">
+            <a href="products.html" class="btn btn-primary rounded-pill btn-gradient">
+              <i class="fa-solid fa-cake-candles"></i>查看商品
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="site-footer__grid">
+
+        <div class="site-footer__brand">
+          <h2 class="site-footer__title">甜心蛋糕坊</h2>
+          <p class="site-footer__desc">
+            每一口都是幸福的滋味，用心製作每一份甜點，傳遞溫暖與愛。
+          </p>
+
+          <div class="site-footer__socials">
+            <a href="contact.html" aria-label="Facebook 尚未開放，請先透過聯絡我們詢問"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="contact.html" aria-label="Instagram 尚未開放，請先透過聯絡我們詢問"><i class="fa-brands fa-instagram"></i></a>
+            <a href="contact.html" aria-label="LINE 尚未開放，請先透過聯絡我們詢問"><i class="fa-brands fa-line"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">快速連結</h3>
+          <ul class="site-footer__links">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="timeline.html">大事記</a></li>
+            <li><a href="products.html">商品一覽</a></li>
+            <li><a href="shop.html">門市據點</a></li>
+            <li><a href="news.html">最新消息</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">聯絡我們</h3>
+          <ul class="site-footer__contact">
+            <li><i class="fa-solid fa-phone"></i><span>02-2345-6789</span></li>
+            <li><i class="fa-regular fa-envelope"></i><span>hello@sweetheart.com</span></li>
+            <li><i class="fa-solid fa-location-dot"></i><span>台北市大安區忠孝東路四段123號</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="site-footer__heading">訂閱電子報</h3>
+          <p class="site-footer__desc">獲取最新優惠資訊</p>
+
+          <form class="site-footer__form">
+            <input class="site-footer__input" type="email" placeholder="您的電子郵件">
+            <button type="submit" aria-label="送出訂閱">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="site-footer__bottom">
+        © 2026 甜心蛋糕坊 All Rights Reserved ・ Powered by Sweetheart Team
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 電子報訂閱成功提示框 -->
+  <div class="newsletter-modal" id="newsletter-modal" aria-hidden="true">
+    <div class="newsletter-modal__overlay"></div>
+    <div class="newsletter-modal__content">
+      <button class="newsletter-modal__close" type="button" aria-label="關閉通知">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="newsletter-modal__icon">🍓</div>
+  
+      <h2 class="newsletter-modal__title">感謝訂閱！</h2>
+      <p class="newsletter-modal__text">
+        新品上市與優惠資訊將第一時間通知您。
+      </p>
+      <button class="btn btn-primary newsletter-modal__btn" type="button">
+        確定
+      </button>
+    </div>
+  </div>
+
+  <!-- Product Modal 商品詳細視窗 -->
+  <div class="modal" id="product-modal" aria-hidden="true">
+
+    <!-- 背景遮罩 -->
+    <div class="modal__overlay"></div>
+
+    <!-- Modal內容 -->
+    <div class="modal__content">
+
+
+      <!-- 關閉按鈕 -->
+      <button type="button" class="modal__close" aria-label="關閉視窗">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- 左側圖片 -->
+      <div class="modal__image">
+        <img id="modal-image" src="" alt="">
+      </div>
+
+      <!-- 右側內容 -->
+      <div class="modal__body">
+        <h2 id="modal-title" class="modal__title">
+        </h2>
+        <p id="modal-subtitle" class="modal__subtitle">
+        </p>
+
+        <!-- 尺寸 -->
+        <div class="modal__size">
+          <span id="modal-size" class="tag tag--primary--soft tag--text-primary">
+          </span>
+        </div>
+
+        <!-- 價格 -->
+        <p id="modal-price" class="modal__price">
+        </p>
+
+        <!-- 商品說明 -->
+        <div class="modal__section">
+          <h3 class="modal__section-title">
+            <i class="fa-solid fa-circle-info"></i>
+            商品說明
+          </h3>
+          <p id="modal-description" class="modal__description">
+          </p>
+        </div>
+
+        <!-- 主要成分 -->
+        <div class="modal__section">
+          <h3 class="modal__section-title">
+            <i class="fa-solid fa-list"></i>
+            主要成分
+          </h3>
+          <div id="modal-ingredients" class="modal__ingredients">
+          </div>
+        </div>
+
+        <!-- 按鈕 -->
+        <div class="modal__actions">
+
+          <a href="contact.html" class="btn btn-secondary">
+            <i class="fa-solid fa-cart-shopping"></i>
+            預約取貨
+          </a>
+
+          <a href="contact.html" class="btn btn-primary">
+            <i class="fa-solid fa-envelope-open"></i>
+            客製詢問
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

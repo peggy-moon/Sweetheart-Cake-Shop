@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>甜心蛋糕坊</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #f8c3cd;
+      --peach: #fcd5ce;
+      --mint: #c7f9cc;
+      --lavender: #e0bbf5;
+      --yellow: #fff3b0;
+      --text-dark: #4a4a4a;
+      --text-light: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    html, body {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--peach);
+      color: var(--text-dark);
+      line-height: 1.6;
+      cursor: url('https://cdn-icons-png.flaticon.com/32/1046/1046784.png'), auto;
+    }
+
+    #loader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: var(--pink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    #loader h2 {
+      color: var(--text-dark);
+      font-size: 2rem;
+      animation: fadeIn 1s infinite alternate;
+    }
+
+    header {
+      background: var(--pink);
+      padding: 1rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header h1 {
+      color: var(--text-dark);
+      font-size: 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: var(--mint);
+      padding: 0.5rem;
+      animation: slideDown 1s ease-in;
+    }
+
+    nav a {
+      margin: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--lavender);
+      color: var(--text-dark);
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--yellow);
+      transform: scale(1.1);
+    }
+
+    .section {
+      padding: 2rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+      background-attachment: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #home { background-image: url('https://source.unsplash.com/1600x900/?cake,macaron'); }
+    #about { background-image: url('https://source.unsplash.com/1600x900/?bakery,kitchen'); }
+    #products { background-image: url('https://source.unsplash.com/1600x900/?dessert,table'); }
+    #ingredients { background-image: url('https://source.unsplash.com/1600x900/?ingredients,farm'); }
+    #qa { background-image: url('https://source.unsplash.com/1600x900/?faq,question'); }
+
+    .section:nth-of-type(2) { animation-delay: 0.3s; }
+    .section:nth-of-type(3) { animation-delay: 0.6s; }
+    .section:nth-of-type(4) { animation-delay: 0.9s; }
+    .section:nth-of-type(5) { animation-delay: 1.2s; }
+
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      background-color: rgba(255,255,255,0.7);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+    }
+
+    .section p, .section .products, .section .ingredients, .section .qa {
+      background-color: rgba(255,255,255,0.85);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .section img:hover {
+      transform: scale(1.05);
+    }
+
+    .products, .ingredients, .qa {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    footer {
+      background: var(--pink);
+      color: var(--text-dark);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      loader.style.display = 'none';
+    });
+  </script>
+</head>
+<body>
+<!--
+  <div id="loader">
+    <h2>甜心蛋糕坊載入中...</h2>
+  </div>
+-->
+
+  <header>
+    <h1>甜心蛋糕坊</h1>
+  </header>
+
+  <nav>
+    <a href="#home">首頁</a>
+    <a href="#about">關於我們</a>
+    <a href="#products">產品介紹</a>
+    <a href="#ingredients">材料產地</a>
+    <a href="#qa">Q&amp;A</a>
+  </nav>
+
+  <section id="home" class="section">
+    <h2>歡迎來到甜心蛋糕坊</h2>
+    <p>用心烘焙每一份甜點，帶給你幸福的滋味。</p>
+    <img src="https://source.unsplash.com/800x400/?cake,macaron" alt="蛋糕展示">
+  </section>
+
+  <section id="about" class="section">
+    <h2>關於我們</h2>
+    <p>甜心蛋糕坊創立於2010年，由一群熱愛甜點的朋友們所創立，致力於手作天然、無添加的甜點。</p>
+    <img src="https://source.unsplash.com/800x400/?bakery,chef" alt="店鋪與廚師">
+  </section>
+
+  <section id="products" class="section">
+    <h2>產品介紹</h2>
+    <div class="products">
+      <div>
+        <img src="https://source.unsplash.com/400x300/?strawberry,cake" alt="草莓蛋糕">
+        <p>經典草莓鮮奶油蛋糕</p>
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/400x300/?macaron,dessert" alt="馬卡龍">
+        <p>繽紛馬卡龍禮盒</p>
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/400x300/?cheesecake" alt="起司蛋糕">
+        <p>濃郁起司蛋糕</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ingredients" class="section">
+    <h2>材料產地</h2>
+    <div class="ingredients">
+      <div>
+        <img src="https://source.unsplash.com/400x300/?milk,cow" alt="鮮奶">
+        <p>我們選用來自台中牧場的新鮮牛奶。</p>
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/400x300/?egg,farm" alt="雞蛋">
+        <p>每天直送的小農放牧蛋，安心又新鮮。</p>
+      </div>
+      <div>
+        <img src="https://source.unsplash.com/400x300/?flour,wheat" alt="麵粉">
+        <p>使用進口日本低筋麵粉，製作口感綿密的蛋糕。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="qa" class="section">
+    <h2>Q&#38;A</h2>
+    <div class="qa">
+      <div>
+        <h3>Q: 是否提供客製化蛋糕？</h3>
+        <p>A: 有的！歡迎提前3天預約，讓我們為你量身打造。</p>
+      </div>
+      <div>
+        <h3>Q: 有提供宅配服務嗎？</h3>
+        <p>A: 目前提供台灣本島冷藏宅配服務。</p>
+      </div>
+      <div>
+        <h3>Q: 蛋糕可以保存多久？</h3>
+        <p>A: 冷藏可保存2天，冷凍可保存5天，建議新鮮食用。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 甜心蛋糕坊 | 本網站由淺月設計</p>
+  </footer>
+</body>
+</html>

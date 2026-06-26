@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>甜心蛋糕坊｜Sweet Heart Bakery</title>
+    <link rel="icon" href="images/logo-icon.png" type="image/x-icon">
+
+    <!-- Google Font(下面這兩句意思是:等等要去 Google Fonts 拿東西，先幫我建立連線吧～) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font思源宋體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Google Font Playfair Display SC -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Font Cormorant Garamond -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+
+    <link href="CSS/tokens.css" rel="stylesheet">
+    <link href="CSS/base.css" rel="stylesheet">
+    <link href="CSS/typography.css" rel="stylesheet">
+    <link href="CSS/layout.css" rel="stylesheet">
+    <link href="CSS/components.css" rel="stylesheet">
+    <link href="CSS/utilities.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+
+    <!-- Font Awesome icon -->
+    <script src="https://kit.fontawesome.com/b0d15683e9.js" crossorigin="anonymous"></script>
+
+    <script src="js/main.js" defer></script>
+
+    <!-- Scroll Reveal 滾動顯示動畫 -->
+    <script src="js/scroll-reveal.js" defer></script>
+
+    <!-- tab 分類按鈕 -->
+    <script src="js/filter-tabs.js" defer></script>
+
+    <!-- FAQ 功能 -->
+    <script src="js/faq.js" defer></script>
+
+    <!-- 有這句在電腦上預覽手機版網頁才能正常顯示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__inner">
+
+                <a href="index.html" class="site-logo">
+                    <img src="images/logo.png" alt="甜心蛋糕坊">
+                </a>
+
+                <!-- 手機版選單切換按鈕 -->
+                <button class="site-nav-toggle" type="button" aria-label="開啟選單">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="site-nav" aria-label="主要導覽">
+                    <a href="index.html" class="site-nav__brand">
+                        <img src="images/logo-2.png" alt="甜心蛋糕坊">
+                    </a>
+                    <ul class="site-nav__list">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="timeline.html">大事記</a></li>
+                        <li><a href="products.html">商品一覽</a></li>
+                        <li><a href="shop.html">門市據點</a></li>
+                        <li><a href="news.html">最新消息</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                        <li><a href="faq.html" class="is-active">常見問題</a></li>
+                    </ul>
+
+                    <div class="site-nav__extra">
+                        <a href="products.html" class="btn btn-secondary site-nav__cta">
+                            立即訂購
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <div class="site-nav__social">
+                            <p class="site-nav__social-title">
+                                關注我們
+                            </p>
+                            <div class="site-nav__social-links">
+                                <a href="contact.html" aria-label="Facebook 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="contact.html" aria-label="Instagram 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="contact.html" aria-label="LINE 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="site-nav__hours">
+                            <p class="site-nav__hours-title">
+                                營業時間
+                            </p>
+                            <p class="site-nav__hours-time">
+                                Mon - Sun
+                            </p>
+                            <p class="site-nav__hours-time">
+                                10:00 - 21:00
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ-hero -->
+    <section class="page-hero section-lg">
+        <div class="container">
+            <div class="page-hero__content text-center">
+                <h1 class="page-hero__title">常見問題</h1>
+                <p class="page-hero__en font-playfair">FAQ</p>
+                <p class="page-hero__desc">
+                    我們整理了顧客最常詢問的問題，幫助您快速找到解答。<br>
+                    如果仍有疑問，歡迎隨時聯絡我們！
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section-lg">
+        <div class="container">
+
+            <div class="faq-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="faq-search-input" type="search" placeholder="搜尋問題...">
+            </div>
+
+            <div class="filter-tabs">
+                <button class="filter-tab is-active" type="button" data-category="all">
+                    <i class="fa-solid fa-bars"></i>
+                    全部問題
+                </button>
+
+                <button class="filter-tab" type="button" data-category="order">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    訂購相關
+                </button>
+
+                <button class="filter-tab" type="button" data-category="product">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    商品相關
+                </button>
+
+                <button class="filter-tab" type="button" data-category="delivery">
+                    <i class="fa-solid fa-truck"></i>
+                    付款配送
+                </button>
+
+                <button class="filter-tab" type="button" data-category="member">
+                    <i class="fa-regular fa-chess-queen"></i>
+                    會員相關
+                </button>
+
+                <button class="filter-tab" type="button" data-category="other">
+                    <i class="fa-solid fa-circle-info"></i>
+                    其他問題
+                </button>
+            </div>
+
+            <p id="faq-result-count" class="faq-result-count"></p>
+
+            <div class="faq-list">
+
+                <article class="faq-item" data-category="order">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">如何線上訂購蛋糕？需要提前多久預訂？</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>您可以透過我們的官方網站或來電預訂蛋糕。<br><br>一般蛋糕建議提前 3-5 天預訂，客製化蛋糕或節慶蛋糕（如母親節、父親節、聖誕節等）建議提前 7-14
+                            天預訂，以確保我們有足夠的時間為您精心製作。<br><br>線上訂購流程：選擇蛋糕 → 選擇尺寸與口味 → 填寫取貨日期與門市 → 完成付款 → 收到訂單確認簡訊。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="order">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">可以客製化蛋糕嗎？有哪些客製化選項？</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>當然可以！我們提供多種客製化服務：<br><br>
+
+                            • 蛋糕口味：可選擇巧克力、香草、抹茶、伯爵茶、草莓等多種口味<br>
+                            • 裝飾風格：可指定鮮花裝飾、水果擺放、奶油花紋等<br>
+                            • 文字訊息：可在蛋糕上寫上祝福文字（限25字以內）<br>
+                            • 特殊需求：無麩質、低糖、素食等特殊飲食需求<br><br>
+
+                            客製化蛋糕建議提前 7-14 天預訂，並與我們的蛋糕設計師討論細節。客製化費用依需求而異，請來電或私訊洽詢。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="order">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">如何取消或修改訂單？</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>如需取消或修改訂單，請於取貨日 3 天前通知我們。<br><br>
+
+                            • 取貨日前 3 天以上：可全額退款或免費修改<br>
+                            • 取貨日前 1-2 天：可退款 50%，或支付差額修改訂單<br>
+                            • 取貨當天：恕無法取消或修改<br><br>
+
+                            取消訂單請致電客服專線 (02) 2345-6789，或私訊我們的 Facebook / LINE 官方帳號，提供您的訂單編號即可辦理。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="order">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">是否提供大量訂購或企業合作方案?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>有的！我們提供企業團購、婚禮蛋糕、派對點心、會議茶點等大量訂購服務。<br><br>
+
+                            • 訂購數量達 10 個蛋糕以上，享 9 折優惠<br>
+                            • 訂購數量達 30 個蛋糕以上，享 85 折優惠<br>
+                            • 長期合作企業另有專屬優惠方案<br><br>
+
+                            請提前 14 天與我們聯繫，將有專人為您規劃最合適的方案。企業合作請來電 (02) 2345-6789 轉
+                            2，或寄信至<br>hello@sweetheart.com</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="product">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">蛋糕的保存方式與保存期限?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>我們的蛋糕皆為當日新鮮製作，為確保最佳風味，建議：<br><br>
+
+                            • 鮮奶油蛋糕：冷藏保存，建議 2 天內食用完畢<br>
+                            • 奶油霜蛋糕：冷藏保存，建議 3 天內食用完畢<br>
+                            • 慕斯蛋糕：冷凍保存，建議 5 天內食用完畢<br>
+                            • 千層蛋糕：冷藏保存，建議 2 天內食用完畢<br>
+                            • 常溫蛋糕（磅蛋糕、瑪德蓮等）：常溫保存，建議 5 天內食用完畢<br><br>
+
+                            食用前建議從冰箱取出回溫 10-15 分鐘，風味更佳！所有蛋糕請避免陽光直射與高溫環境。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="product">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">蛋糕使用的原料是什麼?有使用人工添加物嗎?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>我們堅持使用高品質天然原料：<br><br>
+
+                            • 法國進口發酵奶油、日本北海道鮮奶油<br>
+                            • 台灣在地新鮮水果與食材<br>
+                            • 日本進口麵粉與抹茶粉<br>
+                            • 比利時進口巧克力<br>
+                            • 不添加人工香精、色素、防腐劑<br>
+                            • 不使用氫化植物油與人造奶油<br><br>
+
+                            每一份甜點都是師傅手工精心製作，讓您吃得安心又美味！若您有特殊過敏原（如堅果、牛奶、雞蛋、麩質等），請於訂購時告知。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="product">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">有哪些蛋糕尺寸可以選擇?價格範圍是多少?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>我們提供多種尺寸以滿足不同需求：<br><br>
+
+                            • 4 吋（1-2 人份）：NT$ 280 - 480<br>
+                            • 6 吋（3-4 人份）：NT$ 580 - 880<br>
+                            • 8 吋（6-8 人份）：NT$ 880 - 1,380<br>
+                            • 10 吋（10-12 人份）：NT$ 1,280 - 1,880<br>
+                            • 12 吋（14-16 人份）：NT$ 1,680 - 2,380<br><br>
+
+                            實際價格依蛋糕種類與口味而異，客製化服務費用另計。切片蛋糕每片約 NT$ 120 - 220。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="delivery">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">有哪些付款方式?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>我們提供多種便利的付款方式：<br><br>
+
+                            • 線上刷卡（支援 VISA、MasterCard、JCB）<br>
+                            • 銀行轉帳 / ATM 匯款<br>
+                            • LINE Pay<br>
+                            • 街口支付<br>
+                            • 門市現金支付<br>
+                            • 門市信用卡刷卡<br><br>
+
+                            線上訂購需先完成付款，訂單才算成立。門市取貨時若需更改付款方式，請提前告知。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="delivery">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">有提供外送服務嗎?運費如何計算?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>有的！我們提供以下配送選項：<br><br>
+
+                            • 門市自取：免費，請於指定時間至所選門市取貨<br>
+                            • 台北市區外送（大安、信義、松山、中山、中正區）：運費 NT$ 150，消費滿 NT$ 2,000 免運<br>
+                            • 台北市其他區域：運費 NT$ 200，消費滿 NT$ 3,000 免運<br>
+                            • 新北市區：運費 NT$ 250，消費滿 NT$ 3,500 免運<br><br>
+
+                            外送服務由專人配送，確保蛋糕完整送達。配送時段為 10:00-20:00，可指定 2 小時區間。目前暫不提供其他縣市配送服務，敬請見諒。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="delivery">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">如果收到的蛋糕有問題怎麼辦?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>我們對品質嚴格把關，若您收到的蛋糕有以下問題，請立即拍照並聯繫我們：<br><br>
+
+                            • 蛋糕外觀嚴重損壞<br>
+                            • 商品與訂購內容不符<br>
+                            • 蛋糕有異味或異常狀況<br><br>
+
+                            請於收到蛋糕後 2 小時內，將照片傳送至我們的 LINE 官方帳號或致電客服，我們將立即為您處理。經確認後，可選擇全額退款或重新製作。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="member">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">如何加入會員?會員有哪些福利?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>加入會員完全免費！您可以透過官方網站、門市或 LINE 官方帳號註冊。<br><br>
+
+                            會員福利：<br>
+                            • 每月 15 日會員日，全館蛋糕 85 折優惠<br>
+                            • 消費滿 NT$ 100 累積 1 點，每 10 點可折抵 NT$ 10<br>
+                            • 生日當月專屬優惠：生日蛋糕 8 折<br>
+                            • 新品上市優先通知與試吃邀請<br>
+                            • 不定期會員專屬優惠活動<br>
+                            • 年度累積消費滿 NT$ 10,000 升級為 VIP 會員，享更多專屬禮遇</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="member">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">如何查詢我的點數與消費紀錄?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>您可以透過以下方式查詢：<br><br>
+
+                            • 官方網站會員專區：登入後可查看點數餘額與消費明細<br>
+                            • LINE 官方帳號：輸入「點數查詢」即可獲得即時資訊<br>
+                            • 門市查詢：結帳時告知會員電話號碼，店員可協助查詢<br><br>
+
+                            點數有效期為消費日起算 1 年，到期前我們會發送提醒通知。點數不可轉讓或兌換現金。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="other">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">門市營業時間與交通方式?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>所有門市營業時間：週一至週日 10:00 - 22:00（除夕休息一天）<br><br>
+
+                            各門市交通資訊：<br>
+
+                            • 信義總店：台北市信義區信義路五段7號1樓，捷運市政府站 2 號出口步行 3 分鐘<br>
+                            • 東區分店：台北市大安區忠孝東路四段 123 號 1 樓，捷運忠孝敦化站 3 號出口步行 2 分鐘<br><br>
+
+                            兩間門市皆位於捷運站周邊，交通便利。門市現場備有少量現貨蛋糕與甜點，亦可現場選購。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="other">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">是否提供烘焙教室或DIY課程?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>有的！我們定期開設烘焙課程，由主廚親自教學：<br><br>
+
+                            • 法式千層蛋糕課程：NT$ 2,800/人<br>
+                            • 經典草莓蛋糕課程：NT$ 2,200/人<br>
+                            • 手作餅乾課程：NT$ 1,500/人<br>
+                            • 馬卡龍入門課程：NT$ 1,800/人<br>
+                            • 親子烘焙體驗（一位大人 + 一位小孩）：NT$ 2,500/組<br><br>
+
+                            每班限 8 人，小班制教學，確保每位學員都能獲得充分的指導。上課地點為信義總店二樓烘焙教室。詳細課程時間與報名方式，請參考最新消息頁面或來電洽詢。</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="other">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">蛋糕可以寄送到國外嗎?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>很抱歉，目前我們僅提供台灣本地（台北市與新北市部分區域）的配送服務，暫不提供國際配送。<br><br>
+
+                            不過，若您想給國外的親友驚喜，我們可以：<br>
+                            • 協助將蛋糕送至台灣的親友，由他們代為轉送祝福<br>
+                            • 提供蛋糕照片與祝福卡片，讓您透過數位方式傳遞心意<br><br>
+
+                            未來我們也計畫拓展海外配送服務，敬請期待！</p>
+                    </div>
+                </article>
+
+                <article class="faq-item" data-category="other">
+                    <button class="faq-question" type="button">
+                        <span class="faq-question__icon">＋</span>
+                        <span class="faq-question__text">如何與客服聯繫?回覆時間多久?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>我們提供多種客服管道：<br><br>
+
+                            • 客服專線：(02) 2345-6789（週一至週日 10:00 - 22:00）<br>
+                            • 電子郵件：hello@sweetheart.com（24 小時內回覆）<br>
+                            • LINE 官方帳號：@sweetheart_cake（即時回覆）<br>
+                            • Facebook 私訊：甜心蛋糕坊粉絲專頁<br>
+                            • 門市現場諮詢<br><br>
+
+                            一般問題我們會在 30 分鐘內回覆（營業時間內），複雜問題將於 24 小時內回覆。若遇國定假日或連續假期，回覆時間可能稍有延遲，敬請見諒。</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ CTA -->
+    <section class="faq-cta section-lg reveal">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="cta-card__title">
+                    沒找到您的問題嗎？
+                </h2>
+                <p class="cta-card__desc">
+                    歡迎直接與我們聯繫，我們很樂意為您解答！
+                </p>
+                <a href="contact.html" class="btn btn-tertiary">
+                    聯絡我們
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="site-footer__grid">
+
+                <div class="site-footer__brand">
+                    <h2 class="site-footer__title">甜心蛋糕坊</h2>
+                    <p class="site-footer__desc">
+                        每一口都是幸福的滋味，用心製作每一份甜點，傳遞溫暖與愛。
+                    </p>
+
+                    <div class="site-footer__socials">
+                        <a href="contact.html" aria-label="Facebook 尚未開放，請先透過聯絡我們詢問"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="contact.html" aria-label="Instagram 尚未開放，請先透過聯絡我們詢問"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="contact.html" aria-label="LINE 尚未開放，請先透過聯絡我們詢問"><i class="fa-brands fa-line"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">快速連結</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="timeline.html">大事記</a></li>
+                        <li><a href="products.html">商品一覽</a></li>
+                        <li><a href="shop.html">門市據點</a></li>
+                        <li><a href="news.html">最新消息</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">聯絡我們</h3>
+                    <ul class="site-footer__contact">
+                        <li><i class="fa-solid fa-phone"></i><span>02-2345-6789</span></li>
+                        <li><i class="fa-regular fa-envelope"></i><span>hello@sweetheart.com</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i><span>台北市大安區忠孝東路四段123號</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">訂閱電子報</h3>
+                    <p class="site-footer__desc">獲取最新優惠資訊</p>
+
+                    <form class="site-footer__form">
+                        <input class="site-footer__input" type="email" placeholder="您的電子郵件">
+                        <button type="submit" aria-label="送出訂閱">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="site-footer__bottom">
+                © 2026 甜心蛋糕坊 All Rights Reserved ・ Powered by Sweetheart Team
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 電子報訂閱成功提示框 -->
+    <div class="newsletter-modal" id="newsletter-modal" aria-hidden="true">
+        <div class="newsletter-modal__overlay"></div>
+        <div class="newsletter-modal__content">
+            <button class="newsletter-modal__close" type="button" aria-label="關閉通知">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="newsletter-modal__icon">🍓</div>
+
+            <h2 class="newsletter-modal__title">感謝訂閱！</h2>
+            <p class="newsletter-modal__text">
+                新品上市與優惠資訊將第一時間通知您。
+            </p>
+            <button class="btn btn-primary newsletter-modal__btn" type="button">
+                確定
+            </button>
+        </div>
+    </div>
+
+
+</body>

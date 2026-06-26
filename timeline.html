@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>甜心蛋糕坊｜Sweet Heart Bakery</title>
+    <link rel="icon" href="images/logo-icon.png" type="image/x-icon">
+
+    <!-- Google Font(下面這兩句意思是:等等要去 Google Fonts 拿東西，先幫我建立連線吧～) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font思源宋體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Google Font Playfair Display SC -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Font Cormorant Garamond -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+
+    <link href="CSS/tokens.css" rel="stylesheet">
+    <link href="CSS/base.css" rel="stylesheet">
+    <link href="CSS/typography.css" rel="stylesheet">
+    <link href="CSS/layout.css" rel="stylesheet">
+    <link href="CSS/components.css" rel="stylesheet">
+    <link href="CSS/utilities.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+
+    <!-- Font Awesome icon -->
+    <script src="https://kit.fontawesome.com/b0d15683e9.js" crossorigin="anonymous"></script>
+
+    <script src="js/main.js" defer></script>
+
+    <!-- Scroll Reveal 滾動顯示動畫 -->
+    <script src="js/scroll-reveal.js" defer></script>
+
+    <!-- 有這句在電腦上預覽手機版網頁才能正常顯示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__inner">
+
+                <a href="index.html" class="site-logo">
+                    <img src="images/logo.png" alt="甜心蛋糕坊">
+                </a>
+
+                <!-- 手機版選單切換按鈕 -->
+                <button class="site-nav-toggle" type="button" aria-label="開啟選單">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="site-nav" aria-label="主要導覽">
+                    <a href="index.html" class="site-nav__brand">
+                        <img src="images/logo-2.png" alt="甜心蛋糕坊">
+                    </a>
+                    <ul class="site-nav__list">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="timeline.html" class="is-active">大事記</a></li>
+                        <li><a href="products.html">商品一覽</a></li>
+                        <li><a href="shop.html">門市據點</a></li>
+                        <li><a href="news.html">最新消息</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
+                    </ul>
+
+                    <div class="site-nav__extra">
+                        <a href="products.html" class="btn btn-secondary site-nav__cta">
+                            立即訂購
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <div class="site-nav__social">
+                            <p class="site-nav__social-title">
+                                關注我們
+                            </p>
+                            <div class="site-nav__social-links">
+                                <a href="contact.html" aria-label="Facebook 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="contact.html" aria-label="Instagram 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="contact.html" aria-label="LINE 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="site-nav__hours">
+                            <p class="site-nav__hours-title">
+                                營業時間
+                            </p>
+                            <p class="site-nav__hours-time">
+                                Mon - Sun
+                            </p>
+                            <p class="site-nav__hours-time">
+                                10:00 - 21:00
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section>
+        <div class="cover-section hero-timeline ls-wide ">
+            <div class="hero-text">
+                <h1 class="hero-title">甜心大事記</h1>
+                <h2 class="hero-subtitle">見證每一個甜蜜時刻</h2>
+                <p class="font-playfair hero-brand ls-widest">SWEET HEART BAKERY</p>
+                <p class="hero-desc">從第一爐麵包開始，持續書寫屬於甜心的故事</p>
+                <div class="hero-actions">
+                    <a href="#timeline" class="btn btn-primary rounded-pill glass">
+                        <i class="fa-solid fa-cake-candles"></i>見證甜蜜足跡
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 大事記 -->
+    <section id="timeline" class="timeline section-lg">
+        <div class="container">
+
+            <div class="timeline__header text-center">
+                <p class="timeline__label">OUR STORY</p>
+                <h2 class="heading section-title">我們的故事
+                </h2>
+                <p class="timeline__desc">一步一步，累積甜心蛋糕坊的幸福回憶</p>
+            </div>
+
+            <div class="timeline__list">
+
+                <article class="timeline-card reveal">
+                    <div class="timeline-card__content">
+                        <div class="timeline-card__icon">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3>2018</h3>
+                        <h4>品牌創立</h4>
+                        <p>於台北東區開設第一家門市，開啟甜蜜事業的第一步。</p>
+                    </div>
+                </article>
+
+                <article class="timeline-card reveal">
+                    <div class="timeline-card__content">
+                        <div class="timeline-card__icon">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <h3>2019</h3>
+                        <h4>榮獲獎項</h4>
+                        <p>獲得台北市最佳新創烘焙品牌獎，草莓千層蛋糕成為招牌商品。</p>
+                    </div>
+                </article>
+
+                <article class="timeline-card reveal">
+                    <div class="timeline-card__content">
+                        <div class="timeline-card__icon">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h3>2020</h3>
+                        <h4>擴展營運</h4>
+                        <p>於信義區開設第二家分店，服務更多喜愛甜點的顧客</p>
+                    </div>
+                </article>
+
+                <article class="timeline-card reveal">
+                    <div class="timeline-card__content">
+                        <div class="timeline-card__icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <h3>2021</h3>
+                        <h4>媒體報導</h4>
+                        <p>接受多家美食媒體專訪，品牌知名度大幅提升</p>
+                    </div>
+                </article>
+
+                <article class="timeline-card reveal">
+                    <div class="timeline-card__content">
+                        <div class="timeline-card__icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3>2022</h3>
+                        <h4>產品創新</h4>
+                        <p>推出季節限定系列，結合台灣在地水果打造獨特風味</p>
+                    </div>
+                </article>
+
+                <article class="timeline-card reveal">
+                    <div class="timeline-card__content">
+                        <div class="timeline-card__icon">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h3>2023</h3>
+                        <h4>永續經營</h4>
+                        <p>導入環保包裝，實踐企業社會責任，為環境盡一份心力</p>
+                    </div>
+                </article>
+
+                <article class="timeline-card reveal">
+                    <div class="timeline-card__content">
+                        <div class="timeline-card__icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <h3>2024</h3>
+                        <h4>數位轉型</h4>
+                        <p>推出線上訂購系統，提供更便利的購物體驗</p>
+                    </div>
+                </article>
+
+                <article class="timeline-card reveal">
+                    <div class="timeline-card__content">
+                        <div class="timeline-card__icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3>2025</h3>
+                        <h4>持續前進</h4>
+                        <p>不斷創新，堅持品質，繼續為顧客帶來更多幸福滋味</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 大事記CTA -->
+    <section class="timeline-cta section-lg reveal">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="cta-card__title">
+                    未來，我們將繼續前進
+                </h2>
+                <p class="cta-card__desc">
+                    感謝每一位支持我們的顧客，讓我們能夠持續成長<br>
+                    未來也將繼續用甜點陪伴更多幸福時刻
+                </p>
+                <a href="index.html" class="btn btn-tertiary">
+                    回到首頁
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="site-footer__grid">
+
+                <div class="site-footer__brand">
+                    <h2 class="site-footer__title">甜心蛋糕坊</h2>
+                    <p class="site-footer__desc">
+                        每一口都是幸福的滋味，用心製作每一份甜點，傳遞溫暖與愛。
+                    </p>
+
+                    <div class="site-footer__socials">
+                        <a href="contact.html" aria-label="Facebook 尚未開放，請先透過聯絡我們詢問"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="contact.html" aria-label="Instagram 尚未開放，請先透過聯絡我們詢問"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="contact.html" aria-label="LINE 尚未開放，請先透過聯絡我們詢問"><i class="fa-brands fa-line"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">快速連結</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="timeline.html">大事記</a></li>
+                        <li><a href="products.html">商品一覽</a></li>
+                        <li><a href="shop.html">門市據點</a></li>
+                        <li><a href="news.html">最新消息</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">聯絡我們</h3>
+                    <ul class="site-footer__contact">
+                        <li><i class="fa-solid fa-phone"></i><span>02-2345-6789</span></li>
+                        <li><i class="fa-regular fa-envelope"></i><span>hello@sweetheart.com</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i><span>台北市大安區忠孝東路四段123號</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">訂閱電子報</h3>
+                    <p class="site-footer__desc">獲取最新優惠資訊</p>
+
+                    <form class="site-footer__form">
+                        <input class="site-footer__input" type="email" placeholder="您的電子郵件">
+                        <button type="submit" aria-label="送出訂閱">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="site-footer__bottom">
+                © 2026 甜心蛋糕坊 All Rights Reserved ・ Powered by Sweetheart Team
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 電子報訂閱成功提示框 -->
+    <div class="newsletter-modal" id="newsletter-modal" aria-hidden="true">
+        <div class="newsletter-modal__overlay"></div>
+        <div class="newsletter-modal__content">
+            <button class="newsletter-modal__close" type="button" aria-label="關閉通知">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="newsletter-modal__icon">🍓</div>
+
+            <h2 class="newsletter-modal__title">感謝訂閱！</h2>
+            <p class="newsletter-modal__text">
+                新品上市與優惠資訊將第一時間通知您。
+            </p>
+            <button class="btn btn-primary newsletter-modal__btn" type="button">
+                確定
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

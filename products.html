@@ -1,0 +1,1156 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>甜心蛋糕坊｜Sweet Heart Bakery</title>
+    <link rel="icon" href="images/logo-icon.png" type="image/x-icon">
+
+    <!-- Google Font(下面這兩句意思是:等等要去 Google Fonts 拿東西，先幫我建立連線吧～) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font思源宋體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+
+    <!-- Google Font Playfair Display SC -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Font Cormorant Garamond -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+
+    <link href="CSS/tokens.css" rel="stylesheet">
+    <link href="CSS/base.css" rel="stylesheet">
+    <link href="CSS/typography.css" rel="stylesheet">
+    <link href="CSS/layout.css" rel="stylesheet">
+    <link href="CSS/components.css" rel="stylesheet">
+    <link href="CSS/utilities.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+
+    <!-- Font Awesome icon -->
+    <script src="https://kit.fontawesome.com/b0d15683e9.js" crossorigin="anonymous"></script>
+
+    <script src="js/main.js" defer></script>
+
+    <!-- 商品資料 -->
+    <script src="js/products.js" defer></script>
+
+    <!-- 商品資訊彈出框 -->
+    <script src="js/modal.js" defer></script>
+
+    <!-- Scroll Reveal 滾動顯示動畫 -->
+    <script src="js/scroll-reveal.js" defer></script>
+
+    <!-- tab 分類按鈕 -->
+    <script src="js/filter-tabs.js" defer></script>
+
+    <!-- 商品分類篩選 -->
+    <script src="js/products-filter.js" defer></script>
+
+
+    <!-- 有這句在電腦上預覽手機版網頁才能正常顯示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__inner">
+
+                <a href="index.html" class="site-logo">
+                    <img src="images/logo.png" alt="甜心蛋糕坊">
+                </a>
+
+                <!-- 手機版選單切換按鈕 -->
+                <button class="site-nav-toggle" type="button" aria-label="開啟選單">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="site-nav" aria-label="主要導覽">
+                    <a href="index.html" class="site-nav__brand">
+                        <img src="images/logo-2.png" alt="甜心蛋糕坊">
+                    </a>
+                    <ul class="site-nav__list">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="timeline.html">大事記</a></li>
+                        <li><a href="products.html" class="is-active">商品一覽</a></li>
+                        <li><a href="shop.html">門市據點</a></li>
+                        <li><a href="news.html">最新消息</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                        <li><a href="faq.html">常見問題</a></li>
+                    </ul>
+
+                    <div class="site-nav__extra">
+                        <a href="products.html" class="btn btn-secondary site-nav__cta">
+                            立即訂購
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <div class="site-nav__social">
+                            <p class="site-nav__social-title">
+                                關注我們
+                            </p>
+                            <div class="site-nav__social-links">
+                                <a href="contact.html" aria-label="Facebook 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="contact.html" aria-label="Instagram 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="contact.html" aria-label="LINE 尚未開放，請先透過聯絡我們詢問">
+                                    <i class="fa-brands fa-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="site-nav__hours">
+                            <p class="site-nav__hours-title">
+                                營業時間
+                            </p>
+                            <p class="site-nav__hours-time">
+                                Mon - Sun
+                            </p>
+                            <p class="site-nav__hours-time">
+                                10:00 - 21:00
+                            </p>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- products-hero -->
+    <section class="page-hero section-lg">
+        <div class="container">
+            <div class="page-hero__content text-center">
+                <h1 class="page-hero__title">商品一覽</h1>
+                <p class="page-hero__en font-playfair">OUR PRODUCTS</p>
+                <p class="page-hero__desc">
+                    精選優質食材，每日新鮮現做<br>
+                    從經典蛋糕到手工麵包，為您呈現最美味的烘焙藝術
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商品一覽 -->
+    <section class="products">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-tab is-active" type="button" data-category="all">
+                    <i class="fa-solid fa-bars"></i>
+                    全部商品
+                </button>
+
+                <button class="filter-tab" type="button" data-category="6-inches">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    6吋蛋糕
+                </button>
+
+                <button class="filter-tab" type="button" data-category="8-inches">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    8吋蛋糕
+                </button>
+
+                <button class="filter-tab" type="button" data-category="10-inches">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    10吋蛋糕
+                </button>
+
+                <button class="filter-tab" type="button" data-category="toast">
+                    <i class="fa-solid fa-bread-slice"></i>
+                    吐司系列
+                </button>
+
+                <button class="filter-tab" type="button" data-category="bread">
+                    <i class="fa-solid fa-stroopwafel"></i>
+                    麵包系列
+                </button>
+            </div>
+
+            <div class="grid grid-3">
+
+                <!-- 6吋蛋糕 -->
+                <article class="product-card product-card--cream" data-product="cake-strawberry-6inches"
+                    data-category="6-inches">
+                    <span class="product-card__tag tag--white tag--text-primary">SIGNATURE</span>
+
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-strawberry-6inches-tablet.png">
+
+                            <img src="images/cake/cake-strawberry-6inches.jpg" alt="經典草莓蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">經典草莓蛋糕</h3>
+                        <p class="product-card__desc">新鮮草莓搭配輕盈鮮奶油</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 580</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-chocolate-mousse-6inches"
+                    data-category="6-inches">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-chocolate-mousse-6inches-tablet.png">
+
+                            <img src="images/cake/cake-chocolate-mousse-6inches.jpg" alt="巧克力慕斯蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">巧克力慕斯蛋糕</h3>
+                        <p class="product-card__desc">濃郁比利時巧克力慕斯</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 620</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-matcha-red-bean-6inches"
+                    data-category="6-inches">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-matcha-red-bean-6inches-tablet.png">
+
+                            <img src="images/cake/cake-matcha-red-bean-6inches.jpg" alt="抹茶紅豆蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">抹茶紅豆蛋糕</h3>
+                        <p class="product-card__desc">京都宇治抹茶與蜜紅豆</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 600</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="layer-cake-mango-6inches"
+                    data-category="6-inches">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/layer-cake-mango-6inches-tablet.png">
+
+                            <img src="images/cake/layer-cake-mango-6inches.jpg" alt="芒果千層蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">芒果千層蛋糕</h3>
+                        <p class="product-card__desc">愛文芒果與法式千層</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 650</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-tiramisu-6inches"
+                    data-category="6-inches">
+                    <span class="product-card__tag tag--secondary-solid tag--text-white">NEW</span>
+
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-tiramisu-6inches-tablet.png">
+
+                            <img src="images/cake/cake-tiramisu-6inches.jpg" alt="提拉米蘇蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">提拉米蘇蛋糕</h3>
+                        <p class="product-card__desc">義式經典咖啡風味</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 590</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-lemon-cheese-6inches"
+                    data-category="6-inches">
+                    <span class="product-card__tag tag--primary-solid tag--text-white">HOT</span>
+
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-lemon-cheese-6inches-tablet.png">
+
+                            <img src="images/cake/cake-lemon-cheese-6inches.jpg" alt="檸檬乳酪蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">檸檬乳酪蛋糕</h3>
+                        <p class="product-card__desc">清爽檸檬與濃郁乳酪</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 610</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8吋蛋糕 -->
+                <article class="product-card product-card--cream" data-product="cake-strawberry-8inches"
+                    data-category="8-inches">
+                    <span class="product-card__tag tag--white tag--text-primary">SIGNATURE</span>
+
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-strawberry-8inches-tablet.png">
+
+                            <img src="images/cake/cake-strawberry-8inches.jpg" alt="經典草莓蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">經典草莓蛋糕</h3>
+                        <p class="product-card__desc">新鮮草莓搭配輕盈鮮奶油</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 880</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-black-forest-8inches"
+                    data-category="8-inches">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-black-forest-8inches-tablet.png">
+
+                            <img src="images/cake/cake-black-forest-8inches.jpg" alt="黑森林蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">黑森林蛋糕</h3>
+                        <p class="product-card__desc">德國經典巧克力櫻桃蛋糕</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 920</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-taro-milk-8inches"
+                    data-category="8-inches">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-taro-milk-8inches-tablet.png">
+
+                            <img src="images/cake/cake-taro-milk-8inches.jpg" alt="芋頭鮮奶蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">芋頭鮮奶蛋糕</h3>
+                        <p class="product-card__desc">大甲芋頭與鮮奶油</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 850</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-fruit-forest-8inches"
+                    data-category="8-inches">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-fruit-forest-8inches-tablet.png">
+
+                            <img src="images/cake/cake-fruit-forest-8inches.jpg" alt="水果森林蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">水果森林蛋糕</h3>
+                        <p class="product-card__desc">多種新鮮水果組合</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 950</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-caramel-walnut-8inches"
+                    data-category="8-inches">
+                    <span class="product-card__tag tag--primary-solid tag--text-white">HOT</span>
+
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-caramel-walnut-8inches-tablet.png">
+
+                            <img src="images/cake/cake-caramel-walnut-8inches.jpg" alt="焦糖核桃蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">焦糖核桃蛋糕</h3>
+                        <p class="product-card__desc">香濃焦糖與核桃碎</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 890</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-earl-grey-tea-8inches"
+                    data-category="8-inches">
+                    <span class="product-card__tag tag--secondary-solid tag--text-white">NEW</span>
+
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-earl-grey-tea-8inches-tablet.png">
+
+                            <img src="images/cake/cake-earl-grey-tea-8inches.jpg" alt="伯爵茶蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">伯爵茶蛋糕</h3>
+                        <p class="product-card__desc">英式伯爵茶香</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 870</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10吋蛋糕 -->
+                <article class="product-card product-card--cream" data-product="cake-strawberry-10inches"
+                    data-category="10-inches">
+                    <span class="product-card__tag tag--white tag--text-primary">SIGNATURE</span>
+
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-strawberry-10inches-tablet.png">
+
+                            <img src="images/cake/cake-strawberry-10inches.jpg" alt="經典草莓蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">經典草莓蛋糕</h3>
+                        <p class="product-card__desc">新鮮草莓搭配輕盈鮮奶油</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 1280</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-double-chocolate-10inches"
+                    data-category="10-inches">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-double-chocolate-10inches-tablet.png">
+
+                            <img src="images/cake/cake-double-chocolate-10inches.jpg" alt="雙層巧克力蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">雙層巧克力蛋糕</h3>
+                        <p class="product-card__desc">黑白巧克力雙重享受</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 1380</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake--rainbow-fruit-10inches"
+                    data-category="10-inches">
+                    <span class="product-card__tag tag--primary-solid tag--text-white">HOT</span>
+
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-rainbow-fruit-10inches-tablet.png">
+
+                            <img src="images/cake/cake-rainbow-fruit-10inches.jpg" alt="彩虹水果蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">彩虹水果蛋糕</h3>
+                        <p class="product-card__desc">繽紛水果與彩色蛋糕體</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 1450</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-mango-napoleon-10inches"
+                    data-category="10-inches">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-mango-napoleon-10inches-tablet.png">
+
+                            <img src="images/cake/cake-mango-napoleon-10inches.jpg" alt="芒果拿破崙蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">芒果拿破崙蛋糕</h3>
+                        <p class="product-card__desc">千層酥皮與芒果慕斯</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 1420</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-chestnut-mont-blanc-10inches"
+                    data-category="10-inches">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-chestnut-mont-blanc-10inches-tablet.png">
+
+                            <img src="images/cake/cake-chestnut-mont-blanc-10inches.jpg" alt="栗子蒙布朗蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">栗子蒙布朗蛋糕</h3>
+                        <p class="product-card__desc">日本栗子搭配北海道鮮奶油</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 1350</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="cake-raspberry-rose-10inches"
+                    data-category="10-inches">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/cake/tablet/cake-raspberry-rose-10inches-tablet.png">
+
+                            <img src="images/cake/cake-raspberry-rose-10inches.jpg" alt="覆盆子玫瑰蛋糕">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">覆盆子玫瑰蛋糕</h3>
+                        <p class="product-card__desc">覆盆子與玫瑰花瓣</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 1480</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 吐司系列 -->
+                <article class="product-card product-card--cream" data-product="toast-classic-fresh-milk"
+                    data-category="toast">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/toast/tablet/toast-classic-fresh-milk-tablet.png">
+
+                            <img src="images/toast/toast-classic-fresh-milk.jpg" alt="經典鮮奶吐司">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">經典鮮奶吐司</h3>
+                        <p class="product-card__desc">柔軟綿密的鮮奶吐司</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 85</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="toast-whole-wheat-walnut"
+                    data-category="toast">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/toast/tablet/toast-whole-wheat-walnut-tablet.png">
+
+                            <img src="images/toast/toast-whole-wheat-walnut.jpg" alt="全麥核桃吐司">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">全麥核桃吐司</h3>
+                        <p class="product-card__desc">健康全麥搭配核桃</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 95</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="toast-purple-rice-and-red-bean"
+                    data-category="toast">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/toast/tablet/toast-purple-rice-and-red-bean-tablet.png">
+
+                            <img src="images/toast/toast-purple-rice-and-red-bean.jpg" alt="紫米紅豆吐司">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">紫米紅豆吐司</h3>
+                        <p class="product-card__desc">紫米與蜜紅豆的完美結合</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 100</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="toast-matcha-red-bean"
+                    data-category="toast">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/toast/tablet/toast-matcha-red-bean-tablet.png">
+
+                            <img src="images/toast/toast-matcha-red-bean.jpg" alt="抹茶紅豆吐司">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">抹茶紅豆吐司</h3>
+                        <p class="product-card__desc">京都抹茶與紅豆</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 105</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="toast-cranberry-cheese"
+                    data-category="toast">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/toast/tablet/toast-cranberry-cheese-tablet.png">
+
+                            <img src="images/toast/toast-cranberry-cheese.jpg" alt="蔓越莓乳酪吐司">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">蔓越莓乳酪吐司</h3>
+                        <p class="product-card__desc">酸甜蔓越莓與乳酪</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 110</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="toast-brown-sugar-mochi"
+                    data-category="toast">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/toast/tablet/toast-brown-sugar-mochi-tablet.png">
+
+                            <img src="images/toast/toast-brown-sugar-mochi.jpg" alt="黑糖麻糬吐司">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">黑糖麻糬吐司</h3>
+                        <p class="product-card__desc">Q彈麻糬與黑糖香</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 115</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 麵包系列 -->
+                <article class="product-card product-card--cream" data-product="bread-cream-meal-kit"
+                    data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-cream-meal-kit-tablet.png">
+
+                            <img src="images/bread/bread-cream-meal-kit.jpg" alt="奶油餐包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">奶油餐包</h3>
+                        <p class="product-card__desc">經典柔軟餐包</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 45</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-french-baguette"
+                    data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-french-baguette-tablet.png">
+
+                            <img src="images/bread/bread-french-baguette.jpg" alt="法國長棍麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">法國長棍麵包</h3>
+                        <p class="product-card__desc">外酥內軟的法式麵包</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 65</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-green-onion"
+                    data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-green-onion-tablet.png">
+
+                            <img src="images/bread/bread-green-onion.jpg" alt="蔥花麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">蔥花麵包</h3>
+                        <p class="product-card__desc">台式經典蔥香麵包</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 50</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-meat-floss" data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-meat-floss-tablet.png">
+
+                            <img src="images/bread/bread-meat-floss.jpg" alt="肉鬆麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">肉鬆麵包</h3>
+                        <p class="product-card__desc">鹹香肉鬆捲</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 55</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-red-bean" data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-red-bean-tablet.png">
+
+                            <img src="images/bread/bread-red-bean.jpg" alt="紅豆麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">紅豆麵包</h3>
+                        <p class="product-card__desc">經典紅豆餡麵包</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 48</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-milk-crumble"
+                    data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-milk-crumble-tablet.png">
+
+                            <img src="images/bread/bread-milk-crumble.jpg" alt="奶酥麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">奶酥麵包</h3>
+                        <p class="product-card__desc">香甜奶酥餡</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 52</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-pineapple-bun"
+                    data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-pineapple-bun-tablet.png">
+
+                            <img src="images/bread/bread-pineapple-bun.jpg" alt="菠蘿麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">菠蘿麵包</h3>
+                        <p class="product-card__desc">經典港式菠蘿包</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 50</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-chocolate-spiral"
+                    data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-chocolate-spiral-tablet.png">
+
+                            <img src="images/bread/bread-chocolate-spiral.jpg" alt="巧克力螺旋麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">巧克力螺旋麵包</h3>
+                        <p class="product-card__desc">巧克力醬螺旋</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 58</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-cheese" data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-cheese-tablet.png">
+
+                            <img src="images/bread/bread-cheese.jpg" alt="起司麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">起司麵包</h3>
+                        <p class="product-card__desc">濃郁起司風味</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 60</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-bacon-cheese"
+                    data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-bacon-cheese-tablet.png">
+
+                            <img src="images/bread/bread-bacon-cheese.jpg" alt="培根起司麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">培根起司麵包</h3>
+                        <p class="product-card__desc">培根與起司的完美組合</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 68</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-pretzel" data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-pretzel-tablet.png">
+
+                            <img src="images/bread/bread-pretzel.jpg" alt="德國結麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">德國結麵包</h3>
+                        <p class="product-card__desc">傳統德式扭結麵包</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 55</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card product-card--cream" data-product="bread-multigrain" data-category="bread">
+                    <div class="product-card__image">
+                        <picture>
+                            <source media="(min-width: 481px) and (max-width: 768px)"
+                                srcset="images/bread/tablet/bread-multigrain-tablet.png">
+
+                            <img src="images/bread/bread-multigrain.jpg" alt="雜糧麵包">
+                        </picture>
+                    </div>
+
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">雜糧麵包</h3>
+                        <p class="product-card__desc">健康多穀物麵包</p>
+
+                        <div class="product-card__footer">
+                            <span class="product-card__price">NT$ 70</span>
+                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="site-footer__grid">
+
+                <div class="site-footer__brand">
+                    <h2 class="site-footer__title">甜心蛋糕坊</h2>
+                    <p class="site-footer__desc">
+                        每一口都是幸福的滋味，用心製作每一份甜點，傳遞溫暖與愛。
+                    </p>
+
+                    <div class="site-footer__socials">
+                        <a href="contact.html" aria-label="Facebook 尚未開放，請先透過聯絡我們詢問"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="contact.html" aria-label="Instagram 尚未開放，請先透過聯絡我們詢問"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="contact.html" aria-label="LINE 尚未開放，請先透過聯絡我們詢問"><i class="fa-brands fa-line"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">快速連結</h3>
+                    <ul class="site-footer__links">
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="timeline.html">大事記</a></li>
+                        <li><a href="products.html">商品一覽</a></li>
+                        <li><a href="shop.html">門市據點</a></li>
+                        <li><a href="news.html">最新消息</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">聯絡我們</h3>
+                    <ul class="site-footer__contact">
+                        <li><i class="fa-solid fa-phone"></i><span>02-2345-6789</span></li>
+                        <li><i class="fa-regular fa-envelope"></i><span>hello@sweetheart.com</span></li>
+                        <li><i class="fa-solid fa-location-dot"></i><span>台北市大安區忠孝東路四段123號</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="site-footer__heading">訂閱電子報</h3>
+                    <p class="site-footer__desc">獲取最新優惠資訊</p>
+
+                    <form class="site-footer__form">
+                        <input class="site-footer__input" type="email" placeholder="您的電子郵件">
+                        <button type="submit" aria-label="送出訂閱">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="site-footer__bottom">
+                © 2026 甜心蛋糕坊 All Rights Reserved ・ Powered by Sweetheart Team
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 電子報訂閱成功提示框 -->
+    <div class="newsletter-modal" id="newsletter-modal" aria-hidden="true">
+        <div class="newsletter-modal__overlay"></div>
+        <div class="newsletter-modal__content">
+            <button class="newsletter-modal__close" type="button" aria-label="關閉通知">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="newsletter-modal__icon">🍓</div>
+
+            <h2 class="newsletter-modal__title">感謝訂閱！</h2>
+            <p class="newsletter-modal__text">
+                新品上市與優惠資訊將第一時間通知您。
+            </p>
+            <button class="btn btn-primary newsletter-modal__btn" type="button">
+                確定
+            </button>
+        </div>
+    </div>
+
+    <!-- Product Modal 商品詳細視窗 -->
+    <div class="modal" id="product-modal" aria-hidden="true">
+
+        <!-- 背景遮罩 -->
+        <div class="modal__overlay"></div>
+
+        <!-- Modal內容 -->
+        <div class="modal__content">
+
+            <!-- 關閉按鈕 -->
+            <button type="button" class="modal__close" aria-label="關閉視窗">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- 左側圖片 -->
+            <div class="modal__image">
+                <img id="modal-image" src="" alt="">
+            </div>
+
+            <!-- 右側內容 -->
+            <div class="modal__body">
+                <h2 id="modal-title" class="modal__title">
+                </h2>
+                <p id="modal-subtitle" class="modal__subtitle">
+                </p>
+
+                <!-- 尺寸 -->
+                <div class="modal__size">
+                    <span id="modal-size" class="tag tag--primary--soft tag--text-primary">
+                    </span>
+                </div>
+
+                <!-- 價格 -->
+                <p id="modal-price" class="modal__price">
+                </p>
+
+                <!-- 商品說明 -->
+                <div class="modal__section">
+                    <h3 class="modal__section-title">
+                        <i class="fa-solid fa-circle-info"></i>
+                        商品說明
+                    </h3>
+                    <p id="modal-description" class="modal__description">
+                    </p>
+                </div>
+
+                <!-- 主要成分 -->
+                <div class="modal__section">
+                    <h3 class="modal__section-title">
+                        <i class="fa-solid fa-list"></i>
+                        主要成分
+                    </h3>
+                    <div id="modal-ingredients" class="modal__ingredients">
+                    </div>
+                </div>
+
+                <!-- 按鈕 -->
+                <div class="modal__actions">
+
+                    <a href="contact.html" class="btn btn-secondary">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        預約取貨
+                    </a>
+
+                    <a href="contact.html" class="btn btn-primary">
+                        <i class="fa-solid fa-envelope-open"></i>
+                        客製詢問
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

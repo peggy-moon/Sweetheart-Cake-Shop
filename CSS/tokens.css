@@ -1,0 +1,185 @@
+:root {
+    /* 字級變數 */
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    --text-6xl: 4rem;
+
+    /* 字重變數 */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* 行高變數 */
+    --lh-tight: 1.2;
+    --lh-snug: 1.35;
+    --lh-normal: 1.5;
+    --lh-loose: 1.75;
+
+    /* 字距變數 */
+    --ls-tightest: -0.04em;
+    --ls-tight: -0.02em;
+    --ls-normal: 0;
+    --ls-wide: 0.05em;
+    --ls-wider: 0.1em;
+    --ls-widest: 0.2em;
+
+    /* 字體變數 */
+    --font-sans: "Noto Sans TC", "PingFang TC", sans-serif;
+    --font-serif: "Noto Serif TC", serif;
+
+    /* 文字顏色變數 */
+    /* 主要文字 */
+    --text-primary: #111111;
+
+    /* 次要文字 */
+    --text-secondary: #555555;
+
+    /* 輔助說明 */
+    --text-muted: #888888;
+
+    /* 深底用 */
+    --text-inverse: #ffffff;
+
+    /* 柔和白字 */
+    --text-white-soft: rgba(255, 255, 255, 0.85);
+
+    /* 更淡白字 */
+    --text-white-muted: rgba(255, 255, 255, 0.7);
+
+
+    /* 間距數值,1rem=16px */
+    --space-0: 0;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+
+
+    /* 圓角變數 */
+    --radius-none: 0px;
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-pill: 9999px;
+
+    /* 毛玻璃效果 */
+    /* 背景上不透明程度 */
+    --glass-bg: rgba(255, 255, 255, 0.12);
+
+    /* 玻璃元件邊緣反光程度 */
+    --glass-border: rgba(255, 255, 255, 0.2);
+
+    /* 玻璃模糊程度 */
+    --glass-blur-sm: 4px;
+    --glass-blur-md: 10px;
+    --glass-blur-lg: 20px;
+
+
+    /* 控件高度變數、按鈕、輸入框等等 */
+    --control-h-sm: 36px;
+    --control-h-md: 44px;
+    --control-h-lg: 52px;
+
+    /* 邊框寬度變數 */
+    --border-w: 1px;
+
+    /* 陰影變數 */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .06);
+    --shadow-md: 0 6px 20px rgba(0, 0, 0, .10);
+
+    /* 網站顏色系統(根據每個網站不同可修改) */
+    /* 主要顏色、按鈕色、標題文字色 */
+    --color-primary: #ff3f68;
+    --color-primary-hover: #f42f5b;
+    --color-primary-active: #d91f49;
+
+    --color-secondary: #f59e0b;
+    --color-secondary-hover: #ea8a00;
+    --color-secondary-active: #c76f00;
+
+    --color-tertiary: #4a1f0f;
+    --color-tertiary-hover: #623018;
+    --color-tertiary-active: #7a3f1d;
+
+
+    /* tag淡底顏色 */
+    --color-primary-soft: rgba(255, 63, 104, 0.14);
+    --color-secondary-soft: rgba(245, 158, 11, 0.12);
+    --color-tertiary-soft: rgba(74, 31, 15, 0.12);
+
+    /* 背景色 */
+    --color-bg: #fff3f2;
+    --color-bg-secondary: #ffe4e6;
+    --color-bg-tertiary: #fff5e8;
+
+    /* 邊框顏色 */
+    --color-border: #d1d5db;
+
+    /* 焦點環寬度變數:點到的時候會有的框 */
+    --focus-ring: 3px;
+
+    /* 全站 focus-visible 顏色(通常用在按Tab鍵出現的框顏色) */
+    --color-focus: rgba(244, 63, 94, 0.35);
+
+    /* 小亮點顏色 */
+    --color-accent: #a855f7;
+    --color-accent-secondary: #14b8a6;
+
+    /* 其他顏色 */
+    --color-danger: #ef4444;
+    --color-warning: #f59e0b;
+    --color-success: #10b981;
+
+    /* 表單提示字顏色 */
+    --color-placeholder: #9a9a9a;
+
+    /* 表單 disabled 背景色 */
+    --color-disabled-bg: #f6f6f6;
+
+
+
+    --white: #ffffff;
+    --black: #000000;
+
+    /* container內距 */
+    --container-padding: var(--space-4);
+    /* 手機 */
+}
+
+@media (min-width: 768px) {
+    :root {
+        --container-padding: var(--space-6);
+        /* 平板 */
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --container-padding: var(--space-8);
+        /* 桌機 */
+    }
+}
+
+@media (min-width: 1280px) {
+    :root {
+        --container-padding: var(--space-10);
+        /* 大桌機 */
+    }
+}
