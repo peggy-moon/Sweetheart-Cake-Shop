@@ -180,6 +180,12 @@
     color: var(--white);
 }
 
+/* 亮點色-紫 */
+.tag--accent{
+    background: var(--color-accent);
+    color: var(--white);
+}
+
 /* tag文字顏色 */
 .tag--text-primary {
     color: var(--color-primary);

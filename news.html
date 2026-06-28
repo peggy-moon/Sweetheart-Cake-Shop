@@ -49,6 +49,9 @@
     <!-- 最新消息 Modal -->
     <script src="js/news-modal.js" defer></script>
 
+    <!-- 消息分類篩選 -->
+    <script src="js/news-filter.js" defer></script>
+
     <!-- 有這句在電腦上預覽手機版網頁才能正常顯示 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -169,40 +172,14 @@
 
             <div class="grid grid-3 news__grid">
 
-                <!-- <article class="product-card" data-product="cake-strawberry-6inches" data-category="6-inches">
-                    <span class="product-card__tag tag--secondary-solid tag--text-white">NEW</span>
-
-                    <div class="product-card__image">
-                        <picture>
-                            <source media="(min-width: 481px) and (max-width: 768px)"
-                                srcset="images/cake/tablet/cake-strawberry-6inches-tablet.png">
-
-                            <img src="images/news-1.jpg" alt="經典草莓蛋糕">
-                        </picture>
-                    </div>
-
-                    <div class="product-card__body">
-                        <h3 class="product-card__title">春季限定｜櫻花草莓蛋糕隆重登場</h3>
-                        <p class="product-card__desc">春天的浪漫氣息，融入每一口甜蜜。使用日本櫻花與新鮮草莓，打造春季限定甜點。數量有限，售完為止！</p>
-
-                        <div class="product-card__footer">
-                            <span class="product-card__price">NT$ 580</span>
-                            <button type="button" class="btn btn-primary product-card__btn">詳細說明</button>
-                        </div>
-                    </div>
-                </article> -->
-
-
-
-
-
-
-                <article class="news-card" data-news="cake-sakura-strawberry" data-category="new" tabindex="0"
+                <article class="news-card" data-news="cake-cherry-blossoms-strawberry" data-category="new" tabindex="0"
                     role="button">
-                    <span class="news-card__badge tag tag--primary-solid tag--text-white">NEW</span>
+                    <span class="news-card__badge tag--primary-solid tag--text-white">NEW</span>
 
                     <div class="news-card__image-wrapper">
-                        <img src="images/news-1.jpg" alt="春季限定櫻花草莓蛋糕">
+                        <div class="news-card__image">
+                            <img src="images/news/cake-cherry-blossoms-strawberry.png" alt="春季限定櫻花草莓蛋糕">
+                        </div>
                     </div>
 
                     <div class="news-card__body">
@@ -216,17 +193,180 @@
                             </time>
                         </div>
                         <h3 class="news-card__title">
-                            春季限定｜櫻花草莓蛋糕隆重登場
+                            春季限定｜櫻花草莓蛋糕登場
                         </h3>
                         <p class="news-card__desc">
-                            春天的浪漫氣息，融入每一口甜蜜。使用日本櫻花與新鮮草莓，
+                            春天的浪漫氣息！使用日本櫻花與新鮮草莓，
                             打造春季限定甜點，數量有限，售完為止。
                         </p>
                         <span class="news-card__link">
                             閱讀更多
                             <i class="fa-solid fa-arrow-right"></i>
                         </span>
+                    </div>
+                </article>
 
+                <article class="news-card" data-news="member-day-Offers" data-category="promotions" tabindex="0"
+                    role="button">
+                    <span class="news-card__badge tag--secondary-solid tag--text-white">HOT</span>
+
+                    <div class="news-card__image-wrapper">
+                        <div class="news-card__image">
+                            <img src="images/news/member-day-Offers.png" alt="會員日優惠">
+                        </div>
+                    </div>
+
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class=" tag tag--secondary--soft tag--text-tertiary">
+                                優惠活動
+                            </span>
+                            <time class="news-card__date" datetime="2026-03-10">
+                                <i class="fa-regular fa-calendar"></i>
+                                2026-03-10
+                            </time>
+                        </div>
+                        <h3 class="news-card__title">
+                            會員日優惠｜全館蛋糕85折
+                        </h3>
+                        <p class="news-card__desc">
+                            每月15日會員日，憑會員卡享全館蛋糕85折優惠，還可累積點數兌換精美禮品！
+                        </p>
+                        <span class="news-card__link">
+                            閱讀更多
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </article>
+
+                <article class="news-card" data-news="mother's-day" data-category="activity" tabindex="0" role="button">
+                    <span class="news-card__badge tag--accent">EVENT</span>
+
+                    <div class="news-card__image-wrapper">
+                        <div class="news-card__image">
+                            <img src="images/news/mother's-day.png" alt="母親節活動公告">
+                        </div>
+                    </div>
+
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class=" tag tag--secondary--soft tag--text-tertiary">
+                                活動公告
+                            </span>
+                            <time class="news-card__date" datetime="2026-03-15">
+                                <i class="fa-regular fa-calendar"></i>
+                                2026-03-08
+                            </time>
+                        </div>
+                        <h3 class="news-card__title">
+                            母親節預購開跑｜早鳥優惠中
+                        </h3>
+                        <p class="news-card__desc">
+                            感謝媽媽的辛勞，用甜蜜表達愛意。母親節蛋糕預購開跑，4月15日前預訂享早鳥9折優惠。
+                        </p>
+                        <span class="news-card__link">
+                            閱讀更多
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </article>
+
+                <article class="news-card" data-news="baking-classes" data-category="baking-classes" tabindex="0"
+                    role="button">
+                    <span class="news-card__badge tag--success">CLASS</span>
+
+                    <div class="news-card__image-wrapper">
+                        <div class="news-card__image">
+                            <img src="images/news/baking-classes.png" alt="烘焙課程招生">
+                        </div>
+                    </div>
+
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class=" tag tag--secondary--soft tag--text-tertiary">
+                                烘焙課程
+                            </span>
+                            <time class="news-card__date" datetime="2026-03-15">
+                                <i class="fa-regular fa-calendar"></i>
+                                2026-03-05
+                            </time>
+                        </div>
+                        <h3 class="news-card__title">
+                            法式千層蛋糕烘焙課程招生中
+                        </h3>
+                        <p class="news-card__desc">
+                            由主廚親自教學，學習法式千層蛋糕的製作技巧，小班制教學，名額有限。
+                        </p>
+                        <span class="news-card__link">
+                            閱讀更多
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </article>
+
+                <article class="news-card" data-news="mango-themed-desserts" data-category="new" tabindex="0"
+                    role="button">
+                    <span class="news-card__badge tag--primary-solid tag--text-white">NEW</span>
+
+                    <div class="news-card__image-wrapper">
+                        <div class="news-card__image">
+                            <img src="images/news/mango-themed-desserts.png" alt="芒果系列甜點">
+                        </div>
+                    </div>
+
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class=" tag tag--secondary--soft tag--text-tertiary">
+                                新品上市
+                            </span>
+                            <time class="news-card__date" datetime="2026-03-15">
+                                <i class="fa-regular fa-calendar"></i>
+                                2026-03-01
+                            </time>
+                        </div>
+                        <h3 class="news-card__title">
+                            夏日新品｜芒果系列甜點登場
+                        </h3>
+                        <p class="news-card__desc">
+                            使用台灣愛文芒果，推出芒果千層、芒果慕斯、芒果塔等多款夏日限定甜點。
+                        </p>
+                        <span class="news-card__link">
+                            閱讀更多
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </article>
+
+                <article class="news-card" data-news="bread-series-promotions" data-category="promotions" tabindex="0"
+                    role="button">
+                    <span class="news-card__badge tag--secondary-solid tag--text-white">HOT</span>
+
+                    <div class="news-card__image-wrapper">
+                        <div class="news-card__image">
+                            <img src="images/news/bread-series-promotions.png" alt="麵包系列優惠">
+                        </div>
+                    </div>
+
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class=" tag tag--secondary--soft tag--text-tertiary">
+                                優惠活動
+                            </span>
+                            <time class="news-card__date" datetime="2026-03-15">
+                                <i class="fa-regular fa-calendar"></i>
+                                2026-02-28
+                            </time>
+                        </div>
+                        <h3 class="news-card__title">
+                            買五送一｜麵包系列優惠
+                        </h3>
+                        <p class="news-card__desc">
+                            麵包系列買五送一，多種口味任選，新鮮出爐，香氣四溢！
+                        </p>
+                        <span class="news-card__link">
+                            閱讀更多
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
                     </div>
                 </article>
 
@@ -234,10 +374,6 @@
 
         </div>
     </section>
-
-
-
-
 
     <!-- 頁尾 -->
     <footer class="site-footer">
@@ -349,12 +485,6 @@
             </button>
         </div>
     </div>
-
-
-
-
-
-
 
 </body>
 

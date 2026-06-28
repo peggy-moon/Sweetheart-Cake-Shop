@@ -42,8 +42,12 @@
 
     <!-- EmailJS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
     <!-- 聯絡表單 JS -->
     <script src="js/contact.js" defer></script>
+
+    <!-- 社群籌備中提示框 -->
+    <script src="js/contact-social-modal.js" defer></script>
 
     <!-- 有這句在電腦上預覽手機版網頁才能正常顯示 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -238,19 +242,23 @@
                             關注我們的社群媒體，獲取最新優惠與新品資訊
                         </p>
 
+
                         <div class="contact-social">
-                            <a href="#">
+                            <button type="button" class="contact-social__link" data-social="Facebook">
                                 <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="#">
+                            </button>
+
+                            <button type="button" class="contact-social__link" data-social="Instagram">
                                 <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="#">
+                            </button>
+
+                            <button type="button" class="contact-social__link" data-social="LINE 官方帳號">
                                 <i class="fa-brands fa-line"></i>
-                            </a>
-                            <a href="#">
+                            </button>
+
+                            <button type="button" class="contact-social__link" data-social="YouTube 頻道">
                                 <i class="fa-brands fa-youtube"></i>
-                            </a>
+                            </button>
                         </div>
                     </article>
 
@@ -379,8 +387,25 @@
         </div>
     </div>
 
-
-
+    <!-- 社群籌備中提示框 -->
+    <div class="social-modal" id="social-modal" aria-hidden="true">
+        <div class="social-modal__overlay"></div>
+        <div class="social-modal__content">
+            <button class="social-modal__close" type="button" aria-label="關閉通知">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="social-modal__icon">🍓</div>
+            <h2 class="social-modal__title">
+                <span id="social-modal-name">社群</span>籌備中
+            </h2>
+            <p class="social-modal__text">
+                感謝您的關注！<br>甜心蛋糕坊的社群平台正在準備中，未來將分享新品上市、季節甜點與門市活動資訊。
+            </p>
+            <button class="btn btn-primary social-modal__btn" type="button">
+                我知道了
+            </button>
+        </div>
+    </div>
 
 
 

@@ -33,7 +33,7 @@ const products = {
 
         price: 120,
 
-        image: "images/Strawberry-Croissant.jpg",
+        image: "images/Strawberry-Croissant.png",
         imageAlt: "草莓可頌",
 
         description:
@@ -56,7 +56,7 @@ const products = {
 
         price: 450,
 
-        image: "images/Seasonal-fruit-tower.jpg",
+        image: "images/Seasonal-fruit-tower.png",
         imageAlt: "季節水果塔",
 
         description:
@@ -397,7 +397,7 @@ const products = {
         ]
     },
 
-    "cake--rainbow-fruit-10inches": {
+    "cake-rainbow-fruit-10inches": {
         title: "彩虹水果蛋糕",
         subtitle: "繽紛水果與彩色蛋糕體",
 
@@ -405,7 +405,7 @@ const products = {
 
         price: 1450,
 
-        image: "images/cake/cake--rainbow-fruit-10inches.jpg",
+        image: "images/cake/cake-rainbow-fruit-10inches.jpg",
         imageAlt: "彩虹水果蛋糕",
 
         description:
@@ -419,7 +419,6 @@ const products = {
             "細砂糖",
         ]
     },
-
 
     "cake-mango-napoleon-10inches": {
         title: "芒果拿破崙蛋糕",

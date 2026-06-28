@@ -14,6 +14,16 @@ if (newsModal) {
     const newsModalDate = document.getElementById("news-modal-date");
     const newsModalContent = document.getElementById("news-modal-content");
 
+    const newsModalBox = newsModal.querySelector(".news-modal__content");
+
+    function getNewsImage(news) {
+        if (window.innerWidth <= 480) {
+            return news.mobileImage;
+        }
+    
+        return news.tabletImage;
+    }
+
     function openNewsModal(newsId) {
         const news = newsData[newsId];
 
@@ -22,13 +32,15 @@ if (newsModal) {
             return;
         }
 
-        newsModalImage.src = news.heroImage;
+        newsModalImage.src = getNewsImage(news);
         newsModalImage.alt = news.imageAlt;
 
         newsModalTitle.textContent = news.title;
         newsModalCategory.textContent = news.category;
         newsModalDate.textContent = news.date;
         newsModalContent.innerHTML = news.content;
+
+        newsModalBox.scrollTop = 0;
 
         newsModal.classList.add("is-open");
         newsModal.setAttribute("aria-hidden", "false");

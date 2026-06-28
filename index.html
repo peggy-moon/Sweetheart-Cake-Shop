@@ -33,7 +33,7 @@
 
   <!-- Font Awesome icon -->
   <script src="https://kit.fontawesome.com/b0d15683e9.js" crossorigin="anonymous"></script>
-  
+
   <script src="js/main.js" defer></script>
 
   <!-- 商品資料 -->
@@ -42,7 +42,7 @@
   <!-- 商品資訊彈出框 -->
   <script src="js/modal.js" defer></script>
 
-    <!-- 顧客評價 -->
+  <!-- 顧客評價 -->
   <script src="js/testimonials.js" defer></script>
 
   <!-- Scroll Reveal 滾動顯示動畫 -->
@@ -147,7 +147,7 @@
     </section>
 
     <!-- 招牌草莓千層蛋糕 -->
-    <section id="featured-products--strawberry" class="featured-product--strawberry section-lg reveal">
+    <section id="featured-products--strawberry" class="featured-product--strawberry section-lg anchor-section reveal">
       <div class="container">
         <div class="split featured-product__layout">
 
@@ -282,7 +282,12 @@
             <span class="product-card__tag tag--white tag--text-primary">SIGNATURE</span>
 
             <div class="product-card__image">
-              <img src="images/Strawberry-Crepe-Cake-Slices.png" alt="草莓千層蛋糕">
+              <picture>
+                <source media="(min-width: 481px) and (max-width: 768px)"
+                  srcset="images/Strawberry-Crepe-Cake-Slices-tablet.png">
+
+                <img src="images/Strawberry-Crepe-Cake-Slices.png" alt="草莓千層蛋糕">
+              </picture>
             </div>
 
             <div class="product-card__body">
@@ -300,7 +305,12 @@
             <span class="product-card__tag tag--secondary-solid tag--text-white">NEW</span>
 
             <div class="product-card__image">
-              <img src="images/Strawberry-Croissant.jpg" alt="草莓可頌">
+              <picture>
+                <source media="(min-width: 481px) and (max-width: 768px)"
+                  srcset="images/Strawberry-Croissant-tablet.png">
+
+                <img src="images/Strawberry-Croissant.png" alt="草莓可頌">
+              </picture>
             </div>
 
             <div class="product-card__body">
@@ -318,7 +328,12 @@
             <span class="product-card__tag tag--primary-solid tag--text-white">HOT</span>
 
             <div class="product-card__image">
-              <img src="images/Seasonal-fruit-tower.jpg" alt="季節水果塔">
+              <picture>
+                <source media="(min-width: 481px) and (max-width: 768px)"
+                  srcset="images/Seasonal-fruit-tower-tablet.png">
+
+                <img src="images/Seasonal-fruit-tower.png" alt="季節水果塔">
+              </picture>
             </div>
 
             <div class="product-card__body">
@@ -522,7 +537,7 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
       <div class="newsletter-modal__icon">🍓</div>
-  
+
       <h2 class="newsletter-modal__title">感謝訂閱！</h2>
       <p class="newsletter-modal__text">
         新品上市與優惠資訊將第一時間通知您。

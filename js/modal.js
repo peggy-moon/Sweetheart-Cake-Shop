@@ -14,6 +14,8 @@ if (productModal) {
     const modalDescription = document.getElementById("modal-description");
     const modalIngredients = document.getElementById("modal-ingredients");
 
+    const modalBox = productModal.querySelector(".modal__content");
+
     // 取得所有可以打開 Modal 的商品卡片
     const productCards = document.querySelectorAll("[data-product]");
 
@@ -46,6 +48,8 @@ if (productModal) {
 
             modalIngredients.appendChild(tag);
         });
+
+        modalBox.scrollTop = 0;
 
         productModal.classList.add("is-open");
         productModal.setAttribute("aria-hidden", "false");
