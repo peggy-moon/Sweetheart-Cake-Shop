@@ -427,7 +427,7 @@
 
 /* CTA Banner */
 .cta-banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/decorate-cake.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/decorate-cake.webp");
 }
 
 .cta-banner-text {
