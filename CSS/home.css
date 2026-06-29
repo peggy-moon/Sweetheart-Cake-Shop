@@ -1,9 +1,3 @@
-/* 通用樣式 */
-.section-title {
-    font-size: clamp(3rem, 4vw, 5rem);
-    color: var(--color-tertiary);
-}
-
 /* 精選商品區 */
 .featured-product--strawberry {
     background: linear-gradient(90deg,

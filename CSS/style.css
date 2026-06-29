@@ -7,6 +7,8 @@
     background-position: center;
     background-repeat: no-repeat;
 
+
+
     /* 視差滾動 */
     background-attachment: fixed;
 
@@ -14,6 +16,15 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.section-title {
+    font-size: clamp(3rem, 4vw, 5rem);
+    color: var(--color-tertiary);
+}
+
+.anchor-section {
+    scroll-margin-top: 85px;
 }
 
 /* 滾動顯示動畫 */
@@ -150,6 +161,8 @@
 
 .hero-subtitle {
     font-size: clamp(2.2rem, 6vw, 4rem);
+    color: var(--text-white-soft);
+    text-align: left;
 }
 
 .hero-brand {
@@ -166,10 +179,6 @@
 .hero .btn {
     font-size: clamp(0.95rem, 2vw, 1.1rem);
     padding: 1rem 2rem;
-}
-
-.hero-subtitle {
-    color: var(--text-white-soft);
 }
 
 .hero-actions {
@@ -1012,7 +1021,7 @@
         padding-bottom: var(--space-10);
     }
 
-    
+
 }
 
 
@@ -1021,10 +1030,6 @@
     /* 通用樣式 */
     .section-lg {
         padding: var(--space-10) 0;
-    }
-
-    .anchor-section {
-        scroll-margin-top: 85px;
     }
 
     /* hero(index、about) */

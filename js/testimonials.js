@@ -47,22 +47,31 @@ function renderTestimonial() {
   testimonialRating.textContent = testimonial.rating;
 }
 
-testimonialNext.addEventListener("click", () => {
-  currentTestimonialIndex++;
+if (testimonialRating &&
+    testimonialText &&
+    testimonialAvatar &&
+    testimonialName &&
+    testimonialMeta &&
+    testimonialPrev &&
+    testimonialNext
+  ) {
+    testimonialNext.addEventListener("click", () => {
+    currentTestimonialIndex++;
 
-  if (currentTestimonialIndex >= testimonials.length) {
-    currentTestimonialIndex = 0;
-  }
+    if (currentTestimonialIndex >= testimonials.length) {
+      currentTestimonialIndex = 0;
+    }
 
-  renderTestimonial();
-});
+    renderTestimonial();
+  });
 
-testimonialPrev.addEventListener("click", () => {
-  currentTestimonialIndex--;
+  testimonialPrev.addEventListener("click", () => {
+    currentTestimonialIndex--;
 
-  if (currentTestimonialIndex < 0) {
-    currentTestimonialIndex = testimonials.length - 1;
-  }
+    if (currentTestimonialIndex < 0) {
+      currentTestimonialIndex = testimonials.length - 1;
+    }
 
-  renderTestimonial();
-});
+    renderTestimonial();
+  });
+}

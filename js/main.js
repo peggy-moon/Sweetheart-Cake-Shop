@@ -3,28 +3,30 @@ const navToggle = document.querySelector(".site-nav-toggle");
 const siteNav = document.querySelector(".site-nav");
 const navLinks = document.querySelectorAll(".site-nav a");
 
-navToggle.addEventListener("click", () => {
-    navToggle.classList.toggle("is-open");
-    siteNav.classList.toggle("is-open");
+if (navToggle && siteNav) {
+    navToggle.addEventListener("click", () => {
+        navToggle.classList.toggle("is-open");
+        siteNav.classList.toggle("is-open");
 
-    const isOpen = siteNav.classList.contains("is-open");
+        const isOpen = siteNav.classList.contains("is-open");
 
-    navToggle.setAttribute(
-        "aria-label",
-        isOpen ? "關閉選單" : "開啟選單"
-    );
+        navToggle.setAttribute(
+            "aria-label",
+            isOpen ? "關閉選單" : "開啟選單"
+        );
 
-    document.body.style.overflow = isOpen ? "hidden" : "";
-});
-
-navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-        navToggle.classList.remove("is-open");
-        siteNav.classList.remove("is-open");
-        document.body.style.overflow = "";
-        navToggle.setAttribute("aria-label", "開啟選單");
+        document.body.style.overflow = isOpen ? "hidden" : "";
     });
-});
+
+    navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            navToggle.classList.remove("is-open");
+            siteNav.classList.remove("is-open");
+            document.body.style.overflow = "";
+            navToggle.setAttribute("aria-label", "開啟選單");
+        });
+    });
+}
 
 /* 電子報訂閱 */
 const newsletterModal = document.getElementById("newsletter-modal");
