@@ -1,0 +1,146 @@
+/* 門市據點 */
+.shop-list {
+    display: grid;
+    gap: var(--space-10);
+}
+
+.shop-card {
+    overflow: hidden;
+    background: var(--white);
+    border-radius: 40px;
+    box-shadow:
+        0 24px 60px rgba(74, 31, 15, .08);
+    gap: 0;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.shop-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 32px 70px rgba(74, 31, 15, .12);
+}
+
+.shop-card__map {
+    min-height: 580px;
+}
+
+.shop-card__map iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+.shop-card__content {
+    padding: var(--space-8);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shop-card__title {
+    margin-bottom: var(--space-8);
+
+    font-size: clamp(1rem, 2vw, 3rem);
+
+    color: var(--color-tertiary);
+}
+
+.shop-info {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.shop-info li {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: var(--space-4);
+}
+
+.shop-info i {
+    margin-top: 6px;
+
+    color: var(--color-primary);
+    font-size: var(--text-xl);
+}
+
+.shop-info h3 {
+    margin-bottom: var(--space-1);
+
+    color: var(--color-tertiary);
+    font-size: var(--text-xl);
+}
+
+.shop-info p {
+    color: var(--text-secondary);
+    line-height: var(--lh-loose);
+}
+
+.shop-features {
+    margin-top: var(--space-12);
+}
+
+.shop-features__title {
+    margin-bottom: var(--space-5);
+
+    color: var(--color-tertiary);
+    font-size: var(--text-xl);
+}
+
+.shop-actions {
+    margin-top: var(--space-12);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+}
+
+.shop-actions .btn {
+    min-height: 64px;
+    font-size: var(--text-lg);
+}
+
+@media (max-width: 1024px) {
+
+    .shop {
+        padding-top: var(--space-10);
+    }
+
+    .shop-card__map {
+        height: 360px;
+        min-height: auto;
+    }
+
+    .shop-card__content {
+        justify-content: flex-start;
+        padding: var(--space-10);
+    }
+
+    .shop-card__map,
+    .shop-card__content {
+        flex: none;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .shop-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-card__title {
+        font-size: var(--text-4xl);
+    }
+
+    .shop-card__map {
+        height: 260px;
+        min-height: auto;
+    }
+
+}

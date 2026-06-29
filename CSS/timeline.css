@@ -1,0 +1,200 @@
+/* hero-timeline */
+.hero-timeline {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/timeline-hero.jpg");
+}
+
+.timeline {
+    background: linear-gradient(180deg, #fffaf8 0%, #ffffff 100%);
+}
+
+.timeline__header {
+    margin-bottom: var(--space-20);
+}
+
+.timeline__label {
+    margin-bottom: var(--space-3);
+    color: var(--color-primary);
+    letter-spacing: .2em;
+    font-size: var(--text-sm);
+}
+
+.timeline__desc {
+    margin-top: var(--space-4);
+    color: var(--text-secondary);
+}
+
+.timeline__list {
+    position: relative;
+
+    display: grid;
+    gap: var(--space-20);
+}
+
+.timeline__list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
+    width: 2px;
+    background: var(--color-primary);
+
+    transform: translateX(-50%);
+}
+
+.timeline-card {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+    align-items: center;
+}
+
+.timeline-card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 22px;
+    height: 22px;
+
+    border: 6px solid var(--white);
+    border-radius: 50%;
+
+    background: var(--color-primary);
+    box-shadow: var(--shadow-md);
+
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.timeline-card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    width: 80px;
+    height: 2px;
+
+    background: var(--color-primary-soft);
+}
+
+.timeline-card:nth-child(odd)::after {
+    right: 50%;
+}
+
+.timeline-card:nth-child(even)::after {
+    left: 50%;
+}
+
+.timeline-card:nth-child(odd) .timeline-card__content {
+    grid-column: 1;
+}
+
+.timeline-card:nth-child(even) .timeline-card__content {
+    grid-column: 2;
+}
+
+.timeline-card__content {
+    width: 100%;
+    max-width: 500px;
+
+    padding: var(--space-12);
+    border-radius: 24px;
+
+    background: var(--white);
+    box-shadow: 0 16px 40px rgba(74, 31, 15, .12);
+}
+
+.timeline-card__icon {
+    width: 60px;
+    height: 60px;
+
+    margin-bottom: var(--space-4);
+
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+
+    font-size: var(--text-2xl);
+}
+
+.timeline-card h3 {
+    margin-bottom: var(--space-2);
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: var(--text-5xl);
+    color: var(--color-tertiary);
+    line-height: 1;
+}
+
+.timeline-card h4 {
+    margin-bottom: var(--space-4);
+
+    font-size: var(--text-2xl);
+    color: var(--color-tertiary);
+}
+
+.timeline-card p {
+    color: var(--text-secondary);
+    line-height: var(--lh-loose);
+}
+
+/* 大事記CTA */
+.timeline-cta {
+    background: #fffaf8;
+}
+
+@media (max-width: 768px) {
+
+    .hero-timeline {
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        text-align: left;
+
+        padding-top: 8rem;
+        padding-inline: 2rem;
+
+        background-position: center;
+    }
+
+    .timeline__list::before {
+        left: 24px;
+    }
+
+    .timeline-card {
+        grid-template-columns: 1fr;
+        padding-left: var(--space-12);
+    }
+
+    .timeline-card::before {
+        left: 24px;
+    }
+
+    .timeline-card::after {
+        left: 24px !important;
+        width: 48px;
+    }
+
+    .timeline-card:nth-child(odd) .timeline-card__content,
+    .timeline-card:nth-child(even) .timeline-card__content {
+        grid-column: 1;
+    }
+
+    .timeline-card__content {
+        padding: var(--space-8);
+    }
+
+    .timeline-card h3 {
+        font-size: var(--text-5xl);
+    }
+
+}

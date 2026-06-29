@@ -1,0 +1,245 @@
+/* 常見問題 FAQ */
+.faq {
+    background:
+        linear-gradient(180deg,
+            #fffaf8 0%,
+            #ffffff 100%);
+}
+
+.faq-search {
+    position: relative;
+
+    max-width: 760px;
+    margin-inline: auto;
+    margin-bottom: var(--space-8);
+}
+
+.faq-search i {
+    position: absolute;
+    top: 50%;
+    left: var(--space-6);
+
+    color: var(--color-primary);
+
+    transform: translateY(-50%);
+}
+
+.faq-search input {
+    width: 100%;
+    min-height: 64px;
+
+    padding:
+        0 var(--space-6) 0 var(--space-16);
+
+    border: var(--border-w) solid var(--color-border);
+    border-radius: var(--radius-pill);
+
+    background: var(--white);
+    color: var(--text-primary);
+
+    box-shadow: 0 12px 32px rgba(74, 31, 15, .08);
+}
+
+.faq-search input::placeholder {
+    color: var(--text-muted);
+}
+
+.faq-search input:focus-visible {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow:
+        0 0 0 var(--focus-ring) var(--color-focus),
+        0 12px 32px rgba(74, 31, 15, .08);
+}
+
+.faq-result-count {
+    min-height: 1.5em;
+
+    margin-bottom: var(--space-6);
+
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+/* FAQ 列表 */
+.faq-list {
+    max-width: 960px;
+
+    margin-inline: auto;
+
+    display: grid;
+    gap: var(--space-5);
+}
+
+.faq-item {
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    background: var(--white);
+
+    box-shadow: 0 16px 40px rgba(74, 31, 15, .08);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 22px 48px rgba(74, 31, 15, .12);
+}
+
+.faq-item.is-hidden {
+    display: none;
+}
+
+/* 問題按鈕 */
+.faq-question {
+    width: 100%;
+
+    padding: var(--space-6) var(--space-8);
+
+    border: 0;
+
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: var(--space-4);
+
+    background: transparent;
+    color: var(--color-tertiary);
+
+    text-align: left;
+
+    font-size: var(--text-xl);
+    font-weight: var(--fw-bold);
+
+    cursor: pointer;
+}
+
+.faq-question__icon {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+
+    font-size: var(--text-xl);
+    line-height: 1;
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        transform .2s ease;
+}
+
+.faq-question i {
+    color: var(--color-primary);
+
+    transition: transform .25s ease;
+}
+
+.faq-question__text {
+    min-width: 0;
+    line-height: var(--lh-snug);
+}
+
+/* 答案 */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+
+    transition:
+        max-height .35s ease,
+        padding .35s ease;
+}
+
+.faq-answer p {
+    padding:
+        0 var(--space-8) var(--space-6) calc(var(--space-8) + 36px + var(--space-4));
+
+    color: var(--text-secondary);
+    line-height: var(--lh-loose);
+}
+
+/* 展開狀態 */
+.faq-item.is-open .faq-answer {
+    max-height: 1000px;
+}
+
+.faq-item.is-open .faq-question__icon {
+    background: var(--color-primary);
+    color: var(--white);
+
+    transform: rotate(45deg);
+}
+
+.faq-item.is-open .faq-question i {
+    transform: rotate(180deg);
+}
+
+/* 搜尋關鍵字反白 */
+.faq mark {
+    padding: 0.08em 0.25em;
+
+    border-radius: var(--radius-pill);
+
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+
+    font-weight: var(--fw-bold);
+}
+
+.faq-cta {
+    background: #fffaf8;
+}
+
+
+@media (max-width:768px) {
+
+    .faq-search input {
+        min-height: 56px;
+    }
+
+    .faq-categories {
+        justify-content: center;
+        gap: var(--space-4);
+    }
+
+    .faq-category {
+        min-width: 144px;
+        min-height: 44px;
+
+        padding:
+            var(--space-2) var(--space-4);
+
+        font-size: var(--text-sm);
+    }
+
+    .faq-question {
+        padding: var(--space-5);
+
+        grid-template-columns: auto 1fr auto;
+
+        font-size: var(--text-base);
+    }
+
+    .faq-question__icon {
+        width: 32px;
+        height: 32px;
+
+        font-size: var(--text-lg);
+    }
+
+    .faq-answer p {
+        padding:
+            0 var(--space-5) var(--space-5) calc(var(--space-5) + 32px + var(--space-4));
+    }
+}

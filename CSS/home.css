@@ -1,0 +1,556 @@
+/* 通用樣式 */
+.section-title {
+    font-size: clamp(3rem, 4vw, 5rem);
+    color: var(--color-tertiary);
+}
+
+/* 精選商品區 */
+.featured-product--strawberry {
+    background: linear-gradient(90deg,
+            #fff3f2 0%,
+            #fff8f8 50%,
+            #fffdfb 100%);
+}
+
+.featured-product--toast {
+    background: linear-gradient(-90deg,
+            #fffdf9 0%,
+            #fffaf4 50%,
+            #fff6ed 100%);
+}
+
+.featured-product__layout {
+    align-items: center;
+    gap: var(--space-16);
+}
+
+.featured-product__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.featured-product__text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.featured-product__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-product__image img {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+    width: min(80%, 460px);
+    border-radius: var(--radius-xl);
+
+    transform: translate(4%, 6%);
+    transform-origin: center;
+    transition: transform .4s ease;
+}
+
+/* 精選商品圖後面那個圓形背景 */
+.product-circle {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+    width: clamp(320px, 20vw, 560px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+
+    box-shadow:
+        0 20px 40px rgba(240, 210, 205, 0.25);
+
+    transform: translate(-50%, -50%);
+    transition: transform .4s ease;
+}
+
+.product-circle--strawberry {
+    background: radial-gradient(circle at 35% 35%,
+            #fceee9 0%,
+            #f7e0da 65%,
+            #efd4cd 100%);
+}
+
+.product-circle--toast {
+    background: radial-gradient(circle at 35% 35%,
+            #fff6dd 0%,
+            #ffe9b5 65%,
+            #ffd98a 100%);
+}
+
+/* 精選商品圖hover效果 */
+.featured-product__image:hover img {
+    transform:
+        translate(4%, 6%) rotate(-3deg);
+}
+
+.featured-product__image:hover .product-circle {
+    transform:
+        translate(-50%, -50%) scale(1.05);
+}
+
+.product-features {
+    color: var(--text-secondary);
+}
+
+.product-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 1.1rem;
+    line-height: 1;
+
+    flex-shrink: 0;
+}
+
+.feature-icon--primary {
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+}
+
+.feature-icon--secondary {
+    background: var(--color-secondary-soft);
+    color: var(--color-secondary);
+}
+
+/* 精選商品購買按鈕區域 */
+.featured-product__purchase {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+
+    margin-top: var(--space-4);
+}
+
+.product-price__original {
+    display: block;
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+.product-price__current {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+}
+
+.product-price__amount {
+    font-size: var(--text-3xl);
+    font-weight: var(--fw-bold);
+}
+
+.product-price__size {
+    color: var(--text-secondary);
+}
+
+.btn-gradient {
+
+
+    box-shadow: 0 10px 24px rgba(247, 109, 123, 0.25);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.btn-gradient--strawberry {
+    background: linear-gradient(90deg,
+            #f76d7b 0%,
+            #ff9548 100%);
+}
+
+.btn-gradient--toast {
+    background: linear-gradient(90deg,
+            #FBBF23 0%,
+            #FACB16 100%);
+}
+
+.btn-gradient:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 16px 32px rgba(247, 109, 123, 0.35);
+}
+
+.btn-gradient--strawberry:hover {
+    background: linear-gradient(90deg,
+            var(--color-primary),
+            var(--color-secondary));
+}
+
+.btn-gradient--toast:hover {
+    background: linear-gradient(90deg,
+            #F49E0A 0%,
+            #EAB208 100%);
+}
+
+/* 本月精選標題 */
+.monthly-featured {
+    background: var(--white);
+}
+
+.monthly-featured__header {
+    margin-bottom: var(--space-12);
+}
+
+.monthly-featured__en {
+    margin-top: var(--space-2);
+
+    font-size: clamp(1.5rem, 2vw, 2.25rem);
+    color: var(--color-primary);
+}
+
+.monthly-featured__desc {
+    margin-top: var(--space-2);
+
+    color: var(--text-secondary);
+    font-size: var(--text-base);
+}
+
+/* 統計數字 */
+.stats {
+    background:
+        linear-gradient(180deg,
+            #fffaf8 0%,
+            #ffffff 100%);
+}
+
+.stats__header {
+    margin-bottom: var(--space-12);
+}
+
+.mobile-break {
+    display: inline;
+}
+
+.stats__desc {
+    margin-top: var(--space-3);
+}
+
+.stats-card {
+    text-align: center;
+}
+
+.stats-card__number {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: var(--fw-bold);
+
+    color: var(--color-primary);
+
+    line-height: 1;
+}
+
+.stats-card__number--plus::after {
+    content: "+";
+}
+
+.stats-card__number--year::after {
+    content: "年";
+    font-size: 0.5em;
+}
+
+.stats-card__number--percent::after {
+    content: "%";
+}
+
+.stats-card__label {
+    margin-top: var(--space-3);
+
+    color: var(--text-secondary);
+    font-size: var(--text-lg);
+}
+
+/* 顧客評價 */
+/* 顧客真心推薦 */
+.testimonials {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(90deg,
+            #fff3f2 0%,
+            #fff8f8 50%,
+            #fffdfb 100%);
+}
+
+.testimonials__header {
+    margin-bottom: var(--space-16);
+}
+
+.testimonials__desc {
+    margin-top: var(--space-3);
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.testimonial-card {
+    max-width: 960px;
+    margin-inline: auto;
+
+    padding: var(--space-16);
+    border-radius: 32px;
+
+    background: var(--white);
+    box-shadow: 0 24px 60px rgba(74, 31, 15, .14);
+}
+
+.testimonial-card__rating {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-pill);
+
+    background: var(--color-tertiary);
+    color: var(--text-inverse);
+
+    font-size: var(--text-base);
+    font-weight: var(--fw-bold);
+}
+
+.testimonial-card__star {
+    width: 24px;
+    height: 24px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: var(--color-secondary);
+    color: var(--text-inverse);
+
+    font-size: var(--text-sm);
+}
+
+.testimonial-card__text {
+    margin-block: var(--space-10);
+
+    color: var(--text-secondary);
+    font-size: clamp(1.25rem, 1.25vw, 2rem);
+    line-height: 2;
+}
+
+.testimonial-card__text::before,
+.testimonial-card__text::after {
+    color: var(--color-primary);
+    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+    font-weight: var(--fw-bold);
+    line-height: 0;
+}
+
+.testimonial-card__text::before {
+    content: "“";
+}
+
+.testimonial-card__text::after {
+    content: "”";
+}
+
+.testimonial-customer {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.testimonial-customer__avatar {
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-customer__name {
+    margin-bottom: var(--space-1);
+
+    font-size: var(--text-xl);
+    font-weight: var(--fw-bold);
+    color: var(--color-tertiary);
+}
+
+.testimonial-control {
+    width: 56px;
+    height: 56px;
+
+    display: grid;
+    place-items: center;
+
+    border: var(--border-w) solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    background: var(--white);
+    color: var(--text-primary);
+
+    font-size: var(--text-xl);
+    cursor: pointer;
+
+    transition:
+        background .2s ease,
+        color .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+.testimonial-control:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-tertiary);
+}
+
+.testimonial-control--next {
+    background: var(--color-tertiary);
+    border-color: var(--color-tertiary);
+    color: var(--text-inverse);
+}
+
+.testimonial-control--next:hover {
+    background: var(--color-tertiary-hover);
+}
+
+/* CTA Banner */
+.cta-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/decorate-cake.png");
+}
+
+.cta-banner-text {
+    display: flex;
+    flex-direction: column;
+    font-family: "Noto Serif TC", serif;
+    color: white;
+    font-weight: 500;
+}
+
+.cta-banner-title {
+    font-size: clamp(2rem, 8vw, 5rem);
+    line-height: 2.8;
+}
+
+.cta-banner-subtitle {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    line-height: 1.8;
+    letter-spacing: clamp(0.08em, 1vw, 0.2em);
+}
+
+.cta-banner-actions {
+    margin-top: var(--space-6);
+
+}
+
+@media (max-width: 1024px) {
+
+    .stats-card {
+        width: min(180px, 100%);
+
+        aspect-ratio: 1;
+
+        margin-inline: auto;
+
+        padding: var(--space-8);
+        border-radius: var(--radius-pill);
+        border: var(--border-w) solid var(--color-primary);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* 精選商品區 */
+    .featured-product__image img {
+        width: min(85%, 460px);
+    }
+
+    .product-features.grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        flex: 0 0 40px;
+    }
+
+    .product-features {
+        font-size: var(--text-sm);
+    }
+
+    .featured-product__purchase {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-4);
+    }
+
+    /* 本月精選 */
+    .monthly-featured__header {
+        margin-bottom: var(--space-8);
+    }
+
+    .product-card__body {
+        padding: var(--space-6);
+    }
+
+    /* 顧客評價 */
+    .testimonials__header {
+        margin-bottom: var(--space-10);
+    }
+
+    .testimonial-card {
+        padding: var(--space-6);
+        border-radius: var(--radius-xl);
+    }
+
+    .testimonial-card__text {
+        margin-block: var(--space-8);
+
+        font-size: var(--text-lg);
+        line-height: var(--lh-loose);
+    }
+
+    .testimonial-card__footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .testimonial-controls {
+        align-self: flex-end;
+    }
+
+    .testimonial-customer__avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .testimonial-control {
+        width: 48px;
+        height: 48px;
+    }
+
+}
