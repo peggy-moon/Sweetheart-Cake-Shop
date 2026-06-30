@@ -10,7 +10,7 @@ const products = {
 
         price: 680,
 
-        image: "images/Strawberry-Crepe-Cake-Slices.png",
+        image: "images/Strawberry-Crepe-Cake-Slices.webp",
         imageAlt: "草莓千層蛋糕",
 
         description:
@@ -33,7 +33,7 @@ const products = {
 
         price: 120,
 
-        image: "images/Strawberry-Croissant.png",
+        image: "images/Strawberry-Croissant.webp",
         imageAlt: "草莓可頌",
 
         description:
@@ -56,7 +56,7 @@ const products = {
 
         price: 450,
 
-        image: "images/Seasonal-fruit-tower.png",
+        image: "images/Seasonal-fruit-tower.webp",
         imageAlt: "季節水果塔",
 
         description:

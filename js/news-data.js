@@ -8,10 +8,10 @@ const newsData = {
         date: "2026.03.15",
 
         tabletImage:
-            "images/news/tablet/cake-cherry-blossoms-strawberry-tablet.png",
+            "images/news/tablet/cake-cherry-blossoms-strawberry-tablet.webp",
 
         mobileImage:
-            "images/news/cake-cherry-blossoms-strawberry.png",
+            "images/news/cake-cherry-blossoms-strawberry.webp",
 
         imageAlt: "春季限定櫻花草莓蛋糕",
         content: `
@@ -34,10 +34,10 @@ const newsData = {
         date: "2026.03.10",
 
         tabletImage:
-            "images/news/tablet/member-day-Offers-tablet.png",
+            "images/news/tablet/member-day-Offers-tablet.webp",
 
         mobileImage:
-            "images/news/member-day-Offers.png",
+            "images/news/member-day-Offers.webp",
 
         imageAlt: "會員日優惠",
         content: `
@@ -65,10 +65,10 @@ const newsData = {
         date: "2026.03.08",
         
         tabletImage:
-            "images/news/tablet/mother's-day-tablet.png",
+            "images/news/tablet/mother's-day-tablet.webp",
 
         mobileImage:
-            "images/news/mother's-day.png",
+            "images/news/mother's-day.webp",
 
         imageAlt: "母親節活動公告",
         content: `
@@ -98,10 +98,10 @@ const newsData = {
         date: "2026.03.05",
         
         tabletImage:
-            "images/news/tablet/baking-classes-tablet.png",
+            "images/news/tablet/baking-classes-tablet.webp",
 
         mobileImage:
-            "images/news/baking-classes.png",
+            "images/news/baking-classes.webp",
 
         imageAlt: "烘焙課程招生",
         content: `
@@ -133,10 +133,10 @@ const newsData = {
         date: "2026.03.01",
         
         tabletImage:
-            "images/news/tablet/mango-themed-desserts-tablet.png",
+            "images/news/tablet/mango-themed-desserts-tablet.webp",
 
         mobileImage:
-            "images/news/mango-themed-desserts.png",
+            "images/news/mango-themed-desserts.webp",
 
         imageAlt: "芒果系列甜點",
         content: `
@@ -168,10 +168,10 @@ const newsData = {
         date: "2026.02.28",
 
         tabletImage:
-            "images/news/tablet/bread-series-promotions-tablet.png",
+            "images/news/tablet/bread-series-promotions-tablet.webp",
 
         mobileImage:
-            "images/news/bread-series-promotions.png",
+            "images/news/bread-series-promotions.webp",
 
         imageAlt: "麵包系列優惠",
         content: `
