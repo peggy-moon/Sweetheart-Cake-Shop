@@ -7,8 +7,6 @@
     background-position: center;
     background-repeat: no-repeat;
 
-
-
     /* 視差滾動 */
     background-attachment: fixed;
 
@@ -1010,6 +1008,10 @@
         background: var(--white);
     }
 
+    .cover-section {
+        background-attachment: scroll;
+        background-position: center center;
+    }
 
     /* 頁尾 */
     .site-footer__grid {
@@ -1129,4 +1131,10 @@
         display: block;
     }
 
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .cover-section {
+        background-attachment: scroll;
+    }
 }
